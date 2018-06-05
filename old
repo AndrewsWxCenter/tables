@@ -1,0 +1,2279 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow59.js"></script>
+<noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+<br>
+<hr>
+<br>
+
+<center><p style="font-size:32px"><u>PAGE NAVIGATION:</u></p></center>
+
+<center><p style="font-size:18px">Use the drop-down menu below to view a weather table or scale. Want to request a new table or new data? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfavpBA43JRkO6L4nz9cDfuBqx5J-JrBM-VT2JWbhTc5ybEGw/viewform" target="_blank">Click here.</a></p></center>
+
+<br>
+
+<center><select onchange="location = this.options[this.selectedIndex].value;" style='font-size: 26px;'>
+    <option>Select a table or scale...</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#1">Watch vs. Warning</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#2">Temperature Conversion Table</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#2">Time Conversion Table</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#2">Wind Conversion Table</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#3">The Beaufort Scale</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#4">The Enhanced Fujita Scale</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#4">The Saffir-Simpson Scale</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#4">The Richter Magnitude Scale</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#5">Spatial Scales of Weather</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#6">Air Quality Index</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#6">UV Index</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#7">Appleman Chart</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#8">Bortle Scale of Night-Sky Darkness</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#9">Solar Flare Intensity Classifications</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#10">Sperry-Plitz Ice Accumulation Index</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#11">Torino Scale</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#12">United States Airport Codes</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#13">Snowfall/Meltwater Table</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#14">Cloud Types</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#15">Numerical Weather Prediction Models</option>
+    <option value="http://www.andrewswxcenter.com/p/weather-101.html#16">Annual Meteor Showers</option>
+</select>​</center>
+
+<br>
+
+<br>
+<hr>
+<br>
+
+<a name="1"></a>
+<center><p style="font-size:32px"><u>WATCH VS. WARNING:</u></p></center>
+
+<style style="text/css">
+   .alerttable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+   .emertable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .emertable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .emertable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .emertable tr:hover {
+          background-color: #BB0000;
+    }
+
+   .warntable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .warntable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .warntable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .warntable tr:hover {
+          background-color: #FF0000;
+    }
+
+   .watchtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .watchtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .watchtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .watchtable tr:hover {
+          background-color: #FFB200;
+    }
+
+   .advtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .advtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .advtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .advtable tr:hover {
+          background-color: #FFFB00;
+    }
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+
+
+
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table align="center" class="emertable">
+ <tr>
+  <td width="30%" bgcolor="#B36262"><center><b>EMERGENCY</b></center></td><td><center>Significant and life-threatening weather is about to occur in a densely populated area. Seek sturdy shelter with extreme haste, as dangerous weather has been <b><i>observed or confirmed on the ground</i></b>. Weather emergencies are rare, but must be taken with the utmost seriousness when issued.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="warntable">
+ <tr>
+  <td width="30%" bgcolor="#FC8888"><center><b>WARNING</b></center></td><td><center>Significant or severe weather is about to occur. Seek shelter immediately. If a warning is issued, then be aware that dangerous weather conditions have been <b><i>observed or confirmed on the ground</i></b> and are likely heading to your location.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="watchtable">
+ <tr>
+  <td width="30%" bgcolor="#FFD669"><center><b>WATCH</b></center></td><td><center>Weather watches are meant to make the public more aware of the chance for significant weather. This means that conditions are favorable for the specified weather to occur. Weather watches are issued when high confidence exists in significant weather developing soon.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="advtable">
+ <tr>
+  <td width="30%" bgcolor="#FFFFAA"><center><b>ADVISORY</b></center></td><td><center>Do NOT underestimate or ignore a weather advisory. Advisories alert the public to potential significant weather that may stay below warning criteria, but will still pose a threat to life and property. Remain vigilant for potential changes to the weather advisory.</center></td>
+ </tr>
+</table>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+<div class="container">
+
+</div>
+
+<br>
+<hr>
+<br>
+
+<style style="text/css">
+   .temptable{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .temptable td{ 
+  padding:3.9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .temptable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .temptable tr:hover {
+          background-color: #FF4747;
+    }
+
+.column-left{ float: left; width: 31%; }
+.column-right{ float: right; width: 31%; }
+.column-center{ display: inline-block; width: 34%; }
+
+.cloud-left{ float: left; width: 33%; }
+.cloud-right{ float: right; width: 33%; }
+.cloud-center{ display: inline-block; width: 34%; }
+
+</style>
+
+
+
+
+<a name="2"></a>
+<div style="height:1300px;">
+<table align="left" class="temptable">
+<caption style="font-weight:bold; font-size:17px";>TEMPERATURE CONVERSION TABLE:<br></caption>
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u><br>Fahrenheit<br>[&deg;F]<br></u></center></td><td bgcolor="#DFDFDF"><center><u><br>Celsius<br>[&deg;C]</u></center></td><td bgcolor="#DFDFDF"><center><u><br>Kelvin<br>[&deg;K]</u></center></td>
+ </tr>
+ <tr>
+  <td><center>-40</center></td><td><center>-40</center></td><td><center>233.1</center></td>
+ </tr>
+ <tr>
+  <td><center>-35</center></td><td><center>-37.2</center></td><td><center>235.9</center></td>
+ </tr>
+  <td><center>-30</center></td><td><center>-34.4</center></td><td><center>238.7</center></td>
+ </tr>
+ <tr>
+  <td><center>-25</center></td><td><center>-31.7</center></td><td><center>241.5</center></td>
+ </tr>
+ <tr>
+  <td><center>-22</center></td><td><center>-30</center></td><td><center>243.2</center></td>
+ </tr>
+  <td><center>-20</center></td><td><center>-28.9</center></td><td><center>244.3</center></td>
+ </tr>
+ <tr>
+  <td><center>-15</center></td><td><center>-26.1</center></td><td><center>247.0</center></td>
+ </tr>
+  <td><center>-10</center></td><td><center>-23.2</center></td><td><center>249.8</center></td>
+ </tr>
+ <tr>
+  <td><center>-5</center></td><td><center>-20.6</center></td><td><center>252.6</center></td>
+ </tr>
+ <tr>
+  <td><center>-4</center></td><td><center>-20</center></td><td><center>253.2</center></td>
+ </tr>
+  <td><center>0</center></td><td><center>-17.8</center></td><td><center>255.4</center></td>
+ </tr>
+ <tr>
+  <td><center>5</center></td><td><center>-15</center></td><td><center>258.2</center></td>
+ </tr>
+  <td><center>10</center></td><td><center>-12.2</center></td><td><center>260.9</center></td>
+ </tr>
+ <tr>
+  <td><center>14</center></td><td><center>-10</center></td><td><center>263.2</center></td>
+ </tr>
+ <tr>
+  <td><center>15</center></td><td><center>-9.4</center></td><td><center>263.7</center></td>
+ </tr>
+ <tr>
+  <td><center>20</center></td><td><center>-6.7</center></td><td><center>266.5</center></td>
+ </tr>
+ <tr>
+  <td><center>25</center></td><td><center>-3.9</center></td><td><center>269.3</center></td>
+ </tr>
+ <tr>
+  <td><center>30</center></td><td><center>-1.1</center></td><td><center>272.0</center></td>
+ </tr>
+ <tr>
+  <td><center>32</center></td><td><center>0</center></td><td><center>273.1</center></td>
+ </tr>
+ <tr>
+  <td><center>35</center></td><td><center>1.7</center></td><td><center>247.8</center></td>
+ </tr>
+ <tr>
+  <td><center>40</center></td><td><center>4.4</center></td><td><center>277.6</center></td>
+ </tr>
+ <tr>
+  <td><center>45</center></td><td><center>7.2</center></td><td><center>280.4</center></td>
+ </tr>
+ <tr>
+  <td><center>50</center></td><td><center>10</center></td><td><center>283.2</center></td>
+ </tr>
+ <tr>
+  <td><center>55</center></td><td><center>12.8</center></td><td><center>285.9</center></td>
+ </tr>
+ <tr>
+  <td><center>60</center></td><td><center>15.6</center></td><td><center>288.7</center></td>
+ </tr>
+ <tr>
+  <td><center>65</center></td><td><center>18.3</center></td><td><center>291.5</center></td>
+ </tr>
+ <tr>
+  <td><center>68</center></td><td><center>20</center></td><td><center>293.2</center></td>
+ </tr>
+ <tr>
+  <td><center>70</center></td><td><center>21.1</center></td><td><center>294.3</center></td>
+ </tr>
+ <tr>
+  <td><center>75</center></td><td><center>23.9</center></td><td><center>297.0</center></td>
+ </tr>
+ <tr>
+  <td><center>80</center></td><td><center>26.7</center></td><td><center>299.8</center></td>
+ </tr>
+ <tr>
+  <td><center>85</center></td><td><center>29.4</center></td><td><center>302.6</center></td>
+ </tr>
+ <tr>
+  <td><center>86</center></td><td><center>30</center></td><td><center>303.2</center></td>
+ </tr>
+ <tr>
+  <td><center>90</center></td><td><center>32.2</center></td><td><center>305.4</center></td>
+ </tr>
+ <tr>
+  <td><center>95</center></td><td><center>35</center></td><td><center>308.2</center></td>
+ </tr>
+ <tr>
+  <td><center>100</center></td><td><center>37.8</center></td><td><center>310.9</center></td>
+ </tr>
+ <tr>
+  <td><center>104</center></td><td><center>40</center></td><td><center>313.2</center></td>
+ </tr>
+ <tr>
+  <td><center>105</center></td><td><center>40.6</center></td><td><center>313.7</center></td>
+ </tr>
+ <tr>
+  <td><center>110</center></td><td><center>43.3</center></td><td><center>316.5</center></td>
+ </tr>
+ <tr>
+  <td><center>~9,941</center></td><td><center>5505</center></td><td><center>5778</center></td>
+ </tr>
+ <tr>
+  <td><center>~53,540</center></td><td><center>~28,000+</center></td><td><center>~30,000</center></td>
+ </tr>
+</table>
+
+
+
+
+<style style="text/css">
+   .windtable{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .windtable td{ 
+  padding:3px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .windtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .windtable tr:hover {
+          background-color: #6BB5FF;
+    }
+</style>
+
+<a name="2"></a>
+<table align="right" class="windtable">
+<caption style="font-weight:bold; font-size:17px";>WIND CONVERSION TABLE:<br></caption>
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Miles Per Hour<br>[mph]</u></center></td><td bgcolor="#DFDFDF"><center><u>Knots<br>[kn]</u></center></td><td bgcolor="#DFDFDF"><center><u>Meters Per Second<br>[m/s]</u></center></td>
+ </tr>
+ <tr>
+  <td><center>1.15</center></td><td><center>1</center></td><td><center>0.51</center></td>
+ </tr>
+ <tr>
+  <td><center>5.8</center></td><td><center>5</center></td><td><center>2.57</center></td>
+ </tr>
+  <td><center>11.5</center></td><td><center>10</center></td><td><center>5.14</center></td>
+ </tr>
+ <tr>
+  <td><center>17.3</center></td><td><center>15</center></td><td><center>7.72</center></td>
+ </tr>
+ <tr>
+  <td><center>23.0</center></td><td><center>20</center></td><td><center>10.29</center></td>
+ </tr>
+  <td><center>28.8</center></td><td><center>25</center></td><td><center>12.86</center></td>
+ </tr>
+ <tr>
+  <td><center>34.6</center></td><td><center>30</center></td><td><center>15.43</center></td>
+ </tr>
+  <td><center>40.3</center></td><td><center>35</center></td><td><center>18.01</center></td>
+ </tr>
+ <tr>
+  <td><center>46.1</center></td><td><center>40</center></td><td><center>20.58</center></td>
+ </tr>
+ <tr>
+  <td><center>51.8</center></td><td><center>45</center></td><td><center>23.15</center></td>
+ </tr>
+  <td><center>57.6</center></td><td><center>50</center></td><td><center>25.72</center></td>
+ </tr>
+ <tr>
+  <td><center>63.4</center></td><td><center>55</center></td><td><center>28.29</center></td>
+ </tr>
+  <td><center>69.1</center></td><td><center>60</center></td><td><center>30.87</center></td>
+ </tr>
+ <tr>
+  <td><center>74.9</center></td><td><center>65</center></td><td><center>33.44</center></td>
+ </tr>
+ <tr>
+  <td><center>80.6</center></td><td><center>70</center></td><td><center>36.01</center></td>
+ </tr>
+ <tr>
+  <td><center>86.4</center></td><td><center>75</center></td><td><center>38.58</center></td>
+ </tr>
+ <tr>
+  <td><center>92.2</center></td><td><center>80</center></td><td><center>41.16</center></td>
+ </tr>
+ <tr>
+  <td><center>97.9</center></td><td><center>85</center></td><td><center>43.73</center></td>
+ </tr>
+ <tr>
+  <td><center>97.9</center></td><td><center>90</center></td><td><center>46.3</center></td>
+ </tr>
+ <tr>
+  <td><center>103.7</center></td><td><center>95</center></td><td><center>48.87</center></td>
+ </tr>
+ <tr>
+  <td><center>109.4</center></td><td><center>100</center></td><td><center>51.44</center></td>
+ </tr>
+ <tr>
+  <td><center>115.2</center></td><td><center>105</center></td><td><center>54.02</center></td>
+ </tr>
+ <tr>
+  <td><center>121</center></td><td><center>110</center></td><td><center>56.59</center></td>
+ </tr>
+ <tr>
+  <td><center>132.5</center></td><td><center>115</center></td><td><center>59.16</center></td>
+ </tr>
+ <tr>
+  <td><center>138.2</center></td><td><center>120</center></td><td><center>61.73</center></td>
+ </tr>
+ <tr>
+  <td><center>144.0</center></td><td><center>125</center></td><td><center>64.31</center></td>
+ </tr>
+ <tr>
+  <td><center>149.8</center></td><td><center>130</center></td><td><center>66.88</center></td>
+ </tr>
+ <tr>
+  <td><center>155.5</center></td><td><center>135</center></td><td><center>69.45</center></td>
+ </tr>
+ <tr>
+  <td><center>161.3</center></td><td><center>140</center></td><td><center>72.02</center></td>
+ </tr>
+ <tr>
+  <td><center>167.0</center></td><td><center>145</center></td><td><center>74.59</center></td>
+ </tr>
+ <tr>
+  <td><center>172.8</center></td><td><center>150</center></td><td><center>77.17</center></td>
+ </tr>
+ <tr>
+  <td><center>178.4</center></td><td><center>155</center></td><td><center>79.74</center></td>
+ </tr>
+ <tr>
+  <td><center>184.1</center></td><td><center>160</center></td><td><center>82.31</center></td>
+ </tr>
+ <tr>
+  <td><center>189.9</center></td><td><center>165</center></td><td><center>84.88</center></td>
+ </tr>
+ <tr>
+  <td><center>195.6</center></td><td><center>170</center></td><td><center>87.46</center></td>
+ </tr>
+ <tr>
+  <td><center>201.4</center></td><td><center>175</center></td><td><center>90.03</center></td>
+ </tr>
+ <tr>
+  <td><center>207.1</center></td><td><center>180</center></td><td><center>92.6</center></td>
+ </tr>
+ <tr>
+  <td><center>212.9</center></td><td><center>185</center></td><td><center>95.17</center></td>
+ </tr>
+ <tr>
+  <td><center>218.6</center></td><td><center>190</center></td><td><center>97.74</center></td>
+ </tr>
+ <tr>
+  <td><center>224.4</center></td><td><center>195</center></td><td><center>100.32</center></td>
+ </tr>
+ <tr>
+  <td><center>230.2</center></td><td><center>200</center></td><td><center>102.89</center></td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+
+<style style="text/css">
+   .timetable{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .timetable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .timetable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .timetable tr:hover {
+          background-color: #FFFB86;
+    }
+</style>
+
+<a name="2"></a>
+<table align="center" class="timetable">
+<caption style="font-weight:bold; font-size:17px";>TIME CONVERSION TABLE:<br></caption>
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>UTC/Zulu<br>[Universal]</u></center></td><td bgcolor="#DFDFDF"><center><u>EDT<br>[Daylight Saving]</u></center></td><td bgcolor="#DFDFDF"><center><u>EST<br>[Standard]</u></center></td>
+ </tr>
+ <tr>
+  <td><center>0000</center></td><td><center>8:00 PM</center></td><td><center>7:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>0100</center></td><td><center>9:00 PM</center></td><td><center>8:00 PM</center></td>
+ </tr>
+  <td><center>0200</center></td><td><center>10:00 PM</center></td><td><center>9:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>0300</center></td><td><center>11:00 PM</center></td><td><center>10:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>0400</center></td><td><center>12:00 AM</center></td><td><center>11:00 PM</center></td>
+ </tr>
+  <td><center>0500</center></td><td><center>1:00 AM</center></td><td><center>12:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>0600</center></td><td><center>2:00 AM</center></td><td><center>1:00 AM</center></td>
+ </tr>
+  <td><center>0700</center></td><td><center>3:00 AM</center></td><td><center>2:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>0800</center></td><td><center>4:00 AM</center></td><td><center>3:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>0900</center></td><td><center>5:00 AM</center></td><td><center>4:00 AM</center></td>
+ </tr>
+  <td><center>1000</center></td><td><center>6:00 AM</center></td><td><center>5:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>1100</center></td><td><center>7:00 AM</center></td><td><center>6:00 AM</center></td>
+ </tr>
+  <td><center>1200</center></td><td><center>8:00 AM</center></td><td><center>7:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>1300</center></td><td><center>9:00 AM</center></td><td><center>8:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>1400</center></td><td><center>10:00 AM</center></td><td><center>9:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>1500</center></td><td><center>11:00 AM</center></td><td><center>10:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>1600</center></td><td><center>12:00 PM</center></td><td><center>11:00 AM</center></td>
+ </tr>
+ <tr>
+  <td><center>1700</center></td><td><center>1:00 PM</center></td><td><center>12:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>1800</center></td><td><center>2:00 PM</center></td><td><center>1:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>1900</center></td><td><center>3:00 PM</center></td><td><center>2:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>2000</center></td><td><center>4:00 PM</center></td><td><center>3:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>2100</center></td><td><center>5:00 PM</center></td><td><center>4:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>2200</center></td><td><center>6:00 PM</center></td><td><center>5:00 PM</center></td>
+ </tr>
+ <tr>
+  <td><center>2300</center></td><td><center>7:00 PM</center></td><td><center>6:00 PM</center></td>
+ </tr>
+</table>
+
+<br>
+<hr width="35%">
+<br>
+
+<center><a href="http://www.srh.noaa.gov/jetstream/synoptic/time.html">What is UTC/Z Time?</a><br></center>
+<center><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/US-Timezones.svg/2000px-US-Timezones.svg.png">United States Time Zones</a><br></center>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<style style="text/css">
+   .beaufort{
+  width:95%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .beaufort td{ 
+  padding:4.5px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .beaufort tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .beaufort tr:hover {
+          background-color: #6AFFE6;
+    }
+</style>
+
+<a name="3"></a>
+<table align="center" class="beaufort">
+<caption style="font-weight:bold; font-size:17px";>THE BEAUFORT SCALE:<br></caption>
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Force</u></center></td><td bgcolor="#DFDFDF"><center><u>Wind<br>[Knots]</u></center></td><td bgcolor="#DFDFDF"><center><u>Wind<br>[mph]</u></center></td><td bgcolor="#DFDFDF"><center><u>WMO Classification</u></center></td><td bgcolor="#DFDFDF"><center><u>Effect on Land</u></center></td><td bgcolor="#DFDFDF"><center><u>Effect on Water</u></center></td>
+ </tr>
+ <tr>
+  <td><center>0</center></td><td><center>< 1</center></td><td><center>< 1</center></td><td><center>Calm</center></td><td><center>Smoke rises vertically</center></td><td><center>Sea surface smooth and mirror-like</center></td>
+ </tr>
+ <tr>
+  <td><center>1</center></td><td><center>1-3</center></td><td><center>1-3</center></td><td><center>Light Air</center></td><td><center>Smoke drift indicates wind direction;<br>wind vanes still</center></td><td><center>Scaly ripples; No foam crests</center></td>
+ </tr>
+<tr>
+  <td><center>2</center></td><td><center>4-6</center></td><td><center>4-7</center></td><td><center>Light Breeze</center></td><td><center>Wind felt on face; Leaves rustle;<br>Weather vanes being to move</center></td><td><center>Small wavelets; Crests glassy;<br>No breaking</center></td>
+ </tr>
+<tr>
+  <td><center>3</center></td><td><center>7-10</center></td><td><center>8-12</center></td><td><center>Gentle Breeze</center></td><td><center>Leaves and small twigs constantly moving;<br>Light flags extended</center></td><td><center>Large wavelets; crests begin to break;<br>Scattered whitecaps</center></td>
+ </tr>
+<tr>
+  <td><center>4</center></td><td><center>11-16</center></td><td><center>13-18</center></td><td><center>Moderate Breeze</center></td><td><center>Dust, leaves, and loose paper lifted;<br>Small tree branches move</center></td><td><center>Small waves 1-4 ft. becoming longer;<br>Numerous whitecaps</center></td>
+ </tr>
+<tr>
+  <td><center>5</center></td><td><center>17-21</center></td><td><center>19-24</center></td><td><center>Fresh Breeze</center></td><td><center>Small trees in leaf begin to sway</center></td><td><center>Moderate waves 4-8 ft taking longer form;<br>Many whitecaps; Some spray</center></td>
+ </tr>
+<tr>
+  <td><center>6</center></td><td><center>22-27</center></td><td><center>25-31</center></td><td><center>Strong Breeze</center></td><td><center>Larger tree branches moving;<br>Whistling in wires</center></td><td><center>Larger waves 8-13 ft;<br>Whitecaps common; More spray</center></td>
+ </tr>
+<tr>
+  <td><center>7</center></td><td><center>28-33</center></td><td><center>32-38</center></td><td><center>Near Gale</center></td><td><center>Whole trees moving;<br>Resistance felt walking against wind</center></td><td><center>Sea heaps up, waves 13-19 ft;<br>White foam streaks off breakers</center></td>
+ </tr>
+<tr>
+  <td><center>8</center></td><td><center>34-40</center></td><td><center>39-46</center></td><td><center>Gale</center></td><td><center>Twigs breaking off trees;<br>Generally impedes forward progress</center></td><td><center> Moderately high (18-25 ft) waves of greater length;<br>Edges of crests begin to break into spindrift;<br>Foam blown in streaks</center></td>
+ </tr>
+<tr>
+  <td><center>9</center></td><td><center>41-47</center></td><td><center>47-54</center></td><td><center>Strong Gale</center></td><td><center>Slight structural damage occurs;<br>Slate (shingles) blow off roofs</center></td><td><center>High waves (23-32 ft), sea begins to roll;<br>Dense streaks of foam;<br>Spray may reduce visibility</center></td>
+ </tr>
+<tr>
+  <td><center>10</center></td><td><center>48-55</center></td><td><center>55-63</center></td><td><center>Storm</center></td><td><center>Seldom experienced on land;<br>Trees broken or uprooted, "considerable structural damage"</center></td><td><center>Very high waves (29-41 ft) with overhanging crests;<br>Sea white with densely blown foam;<br>Heavy rolling, lowered visibility</center></td>
+ </tr>
+<tr>
+  <td><center>11</center></td><td><center>56-63</center></td><td><center>64-72</center></td><td><center>Violent Storm</center></td><td><center>Very rarely experienced;<br>Accompanied by widespread damage.</center></td><td><center>Exceptionally high (37-52 ft) waves;<br>Foam patches cover sea, visibility more reduced</center></td>
+ </tr>
+<tr>
+  <td><center>12</center></td><td><center>64+</center></td><td><center>73+</center></td><td><center>Hurricane</center></td><td><center>Devastation</center></td><td><center>Air filled with foam, waves over 45 ft;<br>Sea completely white with driving spray;<br>Visibility greatly reduced</center></td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+
+
+
+
+
+<br>
+<style style="text/css">
+   .fujita{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .fujita td{ 
+  padding:7px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .fujita tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .fujita tr:hover {
+          background-color: #999999;
+    }
+</style>
+
+<a name="4"></a>
+<div style="height:1350px;">
+<table align="left" class="fujita">
+<caption style="font-weight:bold; font-size:17px";>THE ENHANCED FUJITA-PEARSON SCALE:<br></caption>
+ <tr>
+ <td width="20%" bgcolor="#DFDFDF"><center><u>EF Rating</u></center></td><td width="30%" bgcolor="#DFDFDF"><center><u>Wind Speed [mph]</u></center></td><td width="50%"bgcolor="#DFDFDF"><center><u>Damage Indicators</u></center></td>
+ </tr>
+ <tr>
+  <td><center>EF0</center></td><td><center>65-85</center></td><td><center>Light Damage; peels surface off of some roofs; shallow-rooted trees pushed over</center></td>
+ </tr>
+ <tr>
+  <td><center>EF1</center></td><td><center>86-110</center></td><td><center>Moderate Damage; roofs severely stripped; windows or other glass broken; mobile homes overturned or badly damaged</center></td>
+ </tr>
+  <td><center>EF2</center></td><td><center>111-135</center></td><td><center>Considerable Damage; roofs torn off well-constructed houses; foundations of frame homes shifted; light-object missiles generated; cars lifted off ground</center></td>
+ </tr>
+ <tr>
+  <td><center>EF3</center></td><td><center>136-165</center></td><td><center>Severe Damage; heavy cars lifted off the ground and thrown; trains overturned; entire stories of well-constructed buildings destroyed; severe damage to large buildings</center></td>
+ </tr>
+ <tr>
+  <td><center>EF4</center></td><td><center>166-200</center></td><td><center>Devastating Damage; whole frame houses and well-constructed buildings completely leveled; cars thrown long distances, and small missiles generated</center></td>
+ </tr>
+  <td><center>EF5</center></td><td><center>200+</center></td><td><center>Incredible Damage; incredible phenomena will occur; car-sized missiles fly through the air in excess of 100 meters, high-rise buildings have significant damage; large buildings obliterated</center></td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style style="text/css">
+   .richter{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .richter td{ 
+  padding:10px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .richter tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .richter tr:hover {
+          background-color: #BD8659;
+    }
+</style>
+
+<a name="4"></a>
+<table align="right" class="richter">
+<caption style="font-weight:bold; font-size:17px";>THE RICHTER MAGNITUDE SCALE:<br></caption>
+ <tr>
+ <td width="27%" bgcolor="#DFDFDF"><center><u><br>Magnitude</u><br></center></td><td width="28%" bgcolor="#DFDFDF"><center><br><u>Damage</u></center></td><td width="45%" bgcolor="#DFDFDF"><center><br><u>Frequency/<br>Description</u></center></td>
+ </tr>
+ <tr>
+  <td><center>< 2.0</center></td><td><center>Mirco</center></td><td><center>~8,000 per day/Not perceivable</center></td>
+ </tr>
+ <tr>
+  <td><center>2.0-2.9</center></td><td><center>Minor</center></td><td><center>~1,000 per day/Generally not perceivable, but recorded</center></td>
+ </tr>
+  <td><center>3.0-3.9</center></td><td><center>Minor</center></td><td><center>~49,000 per year/Often felt, but cause no damage</center></td>
+ </tr>
+ <tr>
+  <td><center>4.0-4.9</center></td><td><center>Light</center></td><td><center>~6,200 per year/Noticeable shaking of indoor items; significant damage unlikely</center></td>
+ </tr>
+ <tr>
+  <td><center>5.0-5.9</center></td><td><center>Moderate</center></td><td><center>~800 per year/Can cause major damage to poorly constructed buildings over small regions; Slight damage possible to well-designed buildings</center></td>
+ </tr>
+  <td><center>6.0-6.9</center></td><td><center>Strong</center></td><td><center>~120 per year/Can be destructive in areas up to about 100 miles across in populated areas</center></td>
+ </tr>
+ <tr>
+  <td><center>7.0-7.9</center></td><td><center>Major</center></td><td><center>~18 per year/Can cause serious damage over large areas</center></td>
+ </tr>
+  <td><center>8.0-8.9</center></td><td><center>Massive</center></td><td><center>~1 per year/Can cause severe damage in areas hundreds of miles across</center></td>
+ </tr>
+ <tr>
+  <td><center>9.0-9.9</center></td><td><center>Catastro-phic</center></td><td><center>~1 per year/Devastating and catastrophic damage in areas several thousand miles across</center></td>
+ </tr>
+ <tr>
+  <td><center>10.0+</center></td><td><center>Incredible<br>(Unknown)</center></td><td><center>Never recorded/Widespread damage across very large areas (Unknown)</center></td>
+ </tr>
+
+</table>
+
+
+
+
+
+
+
+<style style="text/css">
+   .hurricane{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .hurricane td{ 
+  padding:7px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .hurricane tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .hurricane tr:hover {
+          background-color: #8283B8;
+    }
+</style>
+
+<a name="4"></a>
+<table align="center" class="hurricane">
+<caption style="font-weight:bold; font-size:17px";>THE SAFFIR-SIMPSON SCALE:<br></caption>
+ <tr>
+ <td width="28%" bgcolor="#DFDFDF"><center><u>Category</u></center></td><td width="22%" bgcolor="#DFDFDF"><center><u>Wind Speed<br>[mph]</u></center></td><td width="25%" bgcolor="#DFDFDF"><center><u>Storm Surge<br>[ft]</u></center></td><td width="25%" bgcolor="#DFDFDF"><center><u>Mean Minimum<br>Surface Pressure [mb]</u></center></td>
+ </tr>
+ <tr>
+  <td><center>Tropical Depression</center></td><td><center>< 39</center></td><td><center>Minimal</center></td><td><center>N/A</center></td>
+ </tr>
+ <tr>
+  <td><center>Tropical Storm</center></td><td><center>39-74</center></td><td><center>< 4</center></td><td><center>> 990</center></td>
+ </tr>
+  <td><center>1</center></td><td><center>74-95</center></td><td><center>4-5</center></td><td><center>> 980</center></td>
+ </tr>
+ <tr>
+  <td><center>2</center></td><td><center>96-110</center></td><td><center>6-8</center></td><td><center>965-979</center></td>
+ </tr>
+ <tr>
+  <td><center>3</center></td><td><center>111-130</center></td><td><center>9-12</center></td><td><center>945-964</center></td>
+ </tr>
+  <td><center>4</center></td><td><center>131-155</center></td><td><center>13-18</center></td><td><center>920-944</center></td>
+ </tr>
+ <tr>
+  <td><center>5</center></td><td><center>> 155</center></td><td><center>> 18</center></td><td><center>< 920</center></td>
+ </tr>
+
+</table>
+
+<br>
+<br>
+<br>
+<hr width="25%">
+<br>
+<br>
+<br>
+
+
+<style style="text/css">
+   .spatial{
+  width:30%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spatial td{ 
+  padding:7px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spatial tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spatial tr:hover {
+          background-color: #0DCF00;
+    }
+</style>
+
+<a name="5"></a>
+<table align="center" class="spatial">
+<caption style="font-weight:bold; font-size:17px";>SPATIAL SCALES OF WEATHER:<br></caption>
+ <tr>
+ <td width="30%" bgcolor="#DFDFDF"><center><u>Name</u></center></td><td width="20%" bgcolor="#DFDFDF"><center><u>Spatial Scale<br>[km]</u></center></td><td width="50%" bgcolor="#DFDFDF"><center><u>Examples</u></center></td>
+ </tr>
+ <tr>
+  <td><center>Synoptic Scale</center></td><td><center>1000-2500</center></td><td><center>Mid-latitude Cyclones; Tropical Cyclones; Fronts; Jet Streams</center></td>
+ </tr>
+ <tr>
+  <td><center>Mesoscale</center></td><td><center>10-1000</center></td><td><center>Squall Lines; Gap Winds; Land-Sea Breeze Circulations; Large Convective Complexes</center></td>
+ </tr>
+  <td><center>Storm Scale</center></td><td><center>2-10</center></td><td><center>Individual Thunderstorm Cells</center></td>
+ </tr>
+ <tr>
+  <td><center>Microscale</center></td><td><center>< 2</center></td><td><center>Tornado; Dust Devil; Downburst; Features too small to be depicted on a weather map</center></td>
+ </tr>
+
+</table>
+
+<br>
+
+</div>
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<a name="6"></a>
+<div style="height:1660px">
+<div style="float: left; width: 49%;">
+<center><p style="font-size:22px"><b><u>AIR QUALITY INDEX:</u></b></p></center>
+
+<center><p style="font-size:18px">The Air Quality Index (AQI) is an index for reporting daily air quality. This scale describes how clean or polluted your region's air is, and outlines any health effects that may occur due to exposure to poor air quality.<br></p></center>
+
+<style style="text/css">
+   .aqgreentable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .aqgreentable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .aqgreentable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .aqgreentable tr:hover {
+          background-color: #04B40E;
+    }
+
+   .aqyellowtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .aqyellowtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .aqyellowtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .aqyellowtable tr:hover {
+          background-color: #FBFF00;
+    }
+
+   .aqorangetable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .aqorangetable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .aqorangetable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .aqorangetable tr:hover {
+          background-color: #FFA600;
+    }
+
+   .aqredtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .aqredtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .aqredtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .aqredtable tr:hover {
+          background-color: #FF0000;
+    }
+
+   .aqpurpletable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .aqpurpletable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .aqpurpletable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .aqpurpletable tr:hover {
+          background-color: #B52FF8;
+    }
+
+   .aqhazardtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .aqhazardtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .aqhazardtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .aqhazardtable tr:hover {
+          background-color: #AC0060;
+    }
+
+</style>
+
+<table align="center" class="aqgreentable">
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Color Code<br>& Range</u></center></td><td bgcolor="#DFDFDF"><center><u>Category & Description</u></center></td><td bgcolor="#DFDFDF"><center><u>Precautions<br>& Tips</u></center></td>
+ </tr>
+ <tr>
+  <td width="25%"><center>Code Green<br>0-50</center></td><td width="50%"><center>Good - Air quality is good</center></td><td><center>None</center></td>
+ </tr>
+</table>
+
+<table align="center" class="aqyellowtable">
+ <tr>
+  <td width="25%"><center>Code Yellow<br>51-100</center></td><td width="50%"><center>Moderate - Air quality becomes a concern for people with extra sensitivity to air pollution</center></td><td><center>People who are extra sensitive to air pollution should reschedule outdoor activities to when air quality improves</center></td>
+ </tr>
+</table>
+
+<table align="center" class="aqorangetable">
+ <tr>
+  <td width="25%"><center>Code Orange<br>101-150</center></td><td width="50%"><center>Unhealthy for Sensitive Groups - Air quality is unhealthy for many people, especially those with lung disease, asthma, older adults, and children</center></td><td><center>Sensitive groups should cut back or reschedule strenuous outdoor activities</center></td>
+ </tr>
+</table>
+
+<table align="center" class="aqredtable">
+ <tr>
+  <td width="25%"><center>Code Red<br>151-200</center></td><td width="50%"><center>Unhealthy - Air quality is unhealthy for everyone, especially those with heart or lung disease</center></td><td><center>Everyone should avoid strenuous outdoor activities</center></td>
+ </tr>
+</table>
+
+<table align="center" class="aqpurpletable">
+ <tr>
+  <td width="25%"><center>Code Purple<br>201-300</center></td><td width="50%"><center>Very Unhealthy - Air quality is unhealthy for everyone, especially those with heart or lung disease</center></td><td><center>Everyone should avoid any physical outdoor activities</center></td>
+ </tr>
+</table>
+
+<table align="center" class="aqhazardtable">
+ <tr>
+  <td width="25%"><center>Code Maroon<br>301-500</center></td><td width="50%"><center>Hazardous - Air quality is hazardous for everyone</center></td><td><center>Everyone should avoid any outdoor activities at all costs</center></td>
+ </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+<a name="8"></a>
+<center><p style="font-size:22px"><b><u>BORTLE SCALE OF NIGHT-SKY DARKNESS:</u></b></p></center>
+
+<center><p style="font-size:18px">The <a href="http://www.bigskyastroclub.org/lp_bortle.html" target="_blank">Bortle Scale</a> is a nine-level numeric scale that quantifies the astronomical observability of celestial objects and the visible interference cause by light pollution. The lower the number, the darker the night sky.</p></center>
+
+<style style="text/css">
+   .bortle{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .bortle td{ 
+  padding:7px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .bortle tr{
+  background: #5F5E5E;
+ }
+ /* Define the hover highlight color for the table row */
+    .bortle tr:hover {
+          background-color: #FFFFFF;
+    }
+</style>
+
+<table align="center" class="bortle">
+ <tr>
+ <td width="15%" bgcolor="#DFDFDF"><center><u>Bortle Class</u></center></td><td width="25%" bgcolor="#DFDFDF"><center><u>Color Key/Magnitude</u></center></td><td width="60%" bgcolor="#DFDFDF"><center><u>Sky Description</u></center></td>
+ </tr>
+ <tr>
+  <td><center><b>1</b></center></td><td><center>Black / 7.6-8.0</center></td><td><center>Excellent, naturally dark skies</center></td>
+ </tr>
+ <tr>
+  <td><center><b>2</b></center></td><td><center>Gray / 7.1-7.5</center></td><td><center>Typical, truly dark skies - the Milky Way is clearly visible</center></td>
+ </tr>
+  <td><center><b>3</b></center></td><td><center>Blue / 6.6-7.0</center></td><td><center>Rural sky - Weak glow at the horizon above distant towns</center></td>
+ </tr>
+ <tr>
+  <td><center><b>4</b></center></td><td><center>Green / 6.1-6.5</center></td><td><center>Rural/Suburban transition - Negative effect on stargazing</center></td>
+ </tr>
+ <tr>
+  <td><center><b>5</b></center></td><td><center>Yellow / 5.6-6.0</center></td><td><center>Suburban sky - Strong negative effect on stargazing</center></td>
+ </tr>
+ <tr>
+  <td><center><b>6</b></center></td><td><center>Orange / 5.1-5.5</center></td><td><center>Bright Suburban sky - Milky Way is invisible</center></td>
+ </tr>
+  <td><center><b>7</b></center></td><td><center>Red / 4.6-5.0</center></td><td><center>Suburban/Urban transition - Less than 100 stars visible to the naked eye</center></td>
+ </tr>
+ <tr>
+  <td><center><b>8</b></center></td><td><center>White / 4.1-4.5</center></td><td><center>City sky - Less than 20 stars visible to the naked eye</center></td>
+ </tr>
+ <tr>
+  <td><center><b>9</b></center></td><td><center>White / 4.0 at best</center></td><td><center>Inner City sky - Entire night sky has a bright glow, only the brightest constellations are discernable</center></td>
+ </tr>
+
+</table>
+
+
+</div>
+
+<a name="6"></a>
+<div style="float: right; width: 49%;">
+<center><p style="font-size:22px"><b><u>UV INDEX:</u></b></p></center>
+
+<center><p style="font-size:18px">The UV Index [UVI] is a next day forecast of the amount of skin-damaging ultraviolet radiation expected to reach the earth's surface at the time when the sun is highest in the sky (solar noon).<br></p></center>
+
+<style style="text/css">
+   .uvlowtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+   .uvlowtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .uvlowtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .uvlowtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .uvlowtable tr:hover {
+          background-color: #88E47E;
+    }
+
+   .uvmidtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .uvmidtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .uvmidtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .uvmidtable tr:hover {
+          background-color: #F7CD31;
+    }
+
+   .uvhitable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .uvhitable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .uvhitable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .uvhitable tr:hover {
+          background-color: #F650C9;
+    }
+
+</style>
+
+<table align="center" class="uvlowtable">
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>UV Index Values</u></center></td><td bgcolor="#DFDFDF"><center><u>Description</u></center></td><td bgcolor="#DFDFDF"><center><u>Protection Level</u></center></td>
+ </tr>
+ <tr>
+  <td width="25%"><center>1,2</center></td><td width="50%"><center>Low - You can safely stay outside without the risk of sunburn</center></td><td><center>No skin protection required</center></td>
+ </tr>
+</table>
+
+<table align="center" class="uvmidtable">
+ <tr>
+  <td width="25%"><center>3,4,5,6,7</center></td><td width="50%"><center>Medium - Seek shade during midday hours (1:00-4:00 PM) - Sunscreen and hat recommended</center></td><td><center>Skin protection required if prolonged exposure outdoors</center></td>
+ </tr>
+</table>
+
+<table align="center" class="uvhitable">
+ <tr>
+  <td width="25%"><center>8,9,10,11+</center></td><td width="50%"><center>High to Extreme - Avoid being outdoors during midday hours (1:00-4:00 PM) - Sunscreen required, hat strongly recommended</center></td><td><center><b>Extra</b> skin protection required</center></td>
+ </tr>
+</table>
+
+
+<br>
+<hr>
+<br>
+<br>
+
+<a name="7"></a>
+<center><p style="font-size:22px"><b><u>APPLEMAN CHART [CONTRAILS]:</u></b></p></center>
+<img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/chart1_orig.jpg" width="100%" height="auto">
+<center><p style="font-size:18px">The Appleman Chart was created by H. Appleman in 1953 as a way to predict when a jet airplane would or would not produce a contrail. The current version of this chart is used today to determine the formation of contrails using upper air data.<br></p></center>
+<br>
+<hr>
+<br>
+<center><p style="font-size:22px"><b><u>LEARN MORE:</u></b></p></center>
+<center><a href="http://science-edu.larc.nasa.gov/contrail-edu/resources-activities-appleman_student.php"  target="_blank">Learn more about the Appleman Chart</a></center>
+<center><a href="http://www.skyandtelescope.com/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/"  target="_blank">Learn more about the Bortle Scale</a></center>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<a name="9"></a>
+<center><p style="font-size:22px"><b><u>SOLAR FLARE/CORONAL MASS EJECTION [CME] INTENSITY CLASSIFICATIONS:</u></b></p></center>
+
+<style style="text/css">
+   .flare{
+  width:85%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .flare td{ 
+  padding:7px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .flare tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .flare tr:hover {
+          background-color: #FF9300;
+    }
+</style>
+
+<a name="9"></a>
+<table align="center" class="flare">
+ <tr>
+ <td width="15%" bgcolor="#DFDFDF"><center><u>Classification</u></center></td><td width="20%" bgcolor="#DFDFDF"><center><u><a href="http://spaceweather.com/glossary/flareclasses.html">Peak Flux [W/m^2]</a></u></center></td><td width="20%" bgcolor="#DFDFDF"><center><u>Percentage of Annual<br>Flares (<a href="https://www.nasa.gov/sites/default/files/files/YOSS_Act_15.pdf">2013 Data</a>)</u></center></td><td width="45%" bgcolor="#DFDFDF"><center><u>Earth Impacts:</u></center></td>
+ </tr>
+ <tr>
+  <td><center><b>X</b></center></td><td><center>I >= 10^-4</center></td><td><center>0.34%</center></td><td><center>The most intense solar flares; ten times as intense as M-class flares; capable of causing planet-wide radio blackouts and radiation storms.</center></td>
+ </tr>
+ <tr>
+  <td><center><b>M</b></center></td><td><center>10^-5 < I < 10^-4</center></td><td><center>2.66%</center></td><td><center>Ten times as intense as C-class flares; medium-sized flares capable of causing brief radio blackouts or interference. Occasionally causes subsequent geomagnetic storms.</center></td>
+ </tr>
+  <td><center><b>C</b></center></td><td><center>10^-6 < I < 10^-5</center></td><td><center>59.23%</center></td><td><center>The most frequent flare classification - ten times as intense as B-class flares; these flares are relatively small with few noticeable consequences on Earth.</center></td>
+ </tr>
+ <tr>
+  <td><center><b>B</b></center></td><td><center>I < 10^-6</center></td><td><center>37.77%</center></td><td><center>These and A-class flares are generally regarded as near-background levels.</center></td>
+ </tr>
+
+</table>
+
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<a name="10"></a>
+<center><p style="font-size:22px"><b><u>SPERRY-PLITZ ICE ACCUMULATION INDEX [SPIA]:</u></b></p></center>
+
+<center><p style="font-size:18px">The SPIA Index predicts the total impact an impending ice storm may have on a particular location. It is a tool that can be used for risk management for significant winter weather events. <a href="http://www.spia-index.com/">Learn all about the SPIA Index here.</a><br></p></center>
+
+<style style="text/css">
+   .spiaatable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spiaatable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spiaatable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spiaatable tr:hover {
+          background-color: #D3F7FF;
+    }
+
+   .spiabtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spiabtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spiabtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spiabtable tr:hover {
+          background-color: #B0EFFD;
+    }
+
+   .spiactable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spiactable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spiactable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spiactable tr:hover {
+          background-color: #17D3FE;
+    }
+
+   .spiadtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spiadtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spiadtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spiadtable tr:hover {
+          background-color: #02B5DE;
+    }
+
+   .spiaetable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spiaetable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spiaetable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spiaetable tr:hover {
+          background-color: #038CAC;
+    }
+
+   .spiaftable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .spiaftable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .spiaftable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .spiaftable tr:hover {
+          background-color: #437B88;
+    }
+
+</style>
+
+<table align="center" class="spiaatable">
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Ice Damage Index</u></center></td><td bgcolor="#DFDFDF"><center><u>Average NWS Ice Amount [inches]</u></center></td><td bgcolor="#DFDFDF"><center><u>Wind [mph]</u></center></td><td bgcolor="#DFDFDF"><center><u>Damage & Impact Descriptions</u></center></td>
+ </tr>
+ <tr>
+  <td width="10%"><center>0</center></td><td width="15%"><center>< 0.25</center></td><td width="15%"><center>< 15</center></td><td><center>"Minimal risk of damage to exposed utility systems; no alerts or advisories needed for crew; few outages"</center></td>
+ </tr>
+</table>
+
+<table align="center" class="spiabtable">
+ <tr>
+  <td width="10%"><center>1</center></td><td width="15%"><center>0.10-0.25<br>0.25-0.50</center></td><td width="15%"><center>15-25<br>> 15</center></td><td><center>"Some isolated or localized utility interruptions are possible, typically lasting only a few hours. Roads and bridges may become slick and hazardous."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="spiactable">
+ <tr>
+  <td width="10%"><center>2</center></td><td width="15%"><center>0.10-0.25<br>0.25-0.50<br>0.50-0.75</center></td><td width="15%"><center>25-35<br>15-25<br>> 15</center></td><td><center>"Scattered utility interruptions expected, typically lasting 12 to 24 hours. Roads and travel conditions may be extremely hazardous due to ice accumulation."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="spiadtable">
+ <tr>
+  <td width="10%"><center>3</center></td><td width="15%"><center>0.10-0.25<br>0.25-0.50<br>0.50-0.75<br>0.75-1.00</center></td><td width="15%"><center>>= 35<br>25-35<br>15-25<br>> 15</center></td><td><center>"Numerous utility interruptions with some damage to main feeder lines and equipment expected. Tree limb damage is excessive. Outages lasting 1-5 days."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="spiaetable">
+ <tr>
+  <td width="10%"><center>4</center></td><td width="15%"><center>0.25-0.50<br>0.50-0.75<br>0.75-1.00<br>1.00-1.50</center></td><td width="15%"><center>>= 35<br>25-35<br>15-25<br>> 15</center></td><td><center>"Prolonged and widespread utility interruptions with extensive damage to main distribution feeder lines and some high voltage transmission lines/structures. Outages lasting 5-10 days.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="spiaftable">
+ <tr>
+  <td width="10%"><center>5</center></td><td width="15%"><center>0.50-0.75<br>0.75-1.00<br>1.00-1.50<br>> 1.50</center></td><td width="15%"><center>>= 35<br>>= 25<br>>= 15<br>Any</center></td><td><center>"Catastrophic damage to entire exposed utility systems, including both distribution and transmission networks. Outages could last several weeks in some areas. Shelters needed."</center></td>
+ </tr>
+</table>
+
+
+
+
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<a name="11"></a>
+<center><p style="font-size:22px"><b><u>TORINO SCALE OF ASSESSING ASTEROID/COMET IMPACTS:</u></b></p></center>
+
+<center><p style="font-size:18px">The Torino Scale is a scale developed in the 21st Century that is geared toward assessing the dangers from celestial bodies and their potential impact hazards here on earth. <a href="http://neo.jpl.nasa.gov/torino_scale.html" target="_blank">View another version of the Torino Scale here</a>, or <a href="https://cneos.jpl.nasa.gov/" target="_blank">visit the CNEOS (Center for Near Earth Object Studies) Website</a>.</p></center>
+
+<style style="text/css">
+   .torinoatable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .torinoatable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .torinoatable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .torinoatable tr:hover {
+          background-color: #F9F9F9;
+    }
+
+   .torinobtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .torinobtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .torinobtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .torinobtable tr:hover {
+          background-color: #00FF27;
+    }
+
+   .torinoctable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .torinoctable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .torinoctable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .torinoctable tr:hover {
+          background-color: #FBFF00;
+    }
+
+   .torinodtable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .torinodtable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .torinodtable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .torinodtable tr:hover {
+          background-color: #FFA200;
+    }
+
+   .torinoetable{
+  width:100%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .torinoetable td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .torinoetable tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .torinoetable tr:hover {
+          background-color: #FF0000;
+    }
+
+</style>
+
+<table align="center" class="torinoatable">
+ <tr>
+ <td width="20%" bgcolor="#DFDFDF"><center><u>Hazard Level<br>& Color Zone</u></center></td><td  width="20%" bgcolor="#DFDFDF"><center><u>Category Number</u></center></td><td width="60%" bgcolor="#DFDFDF"><center><u>Description</u></center></td>
+ </tr>
+ <tr>
+  <td><center><b>No Hazard (White Zone)</b></center></td><td><center><b>0</b></center></td><td><center>"The likelihood of a collision is zero, or is so low as to be effectively zero. Also applies to small objects such as meteors and bodies that burn up in the atmosphere as well as infrequent meteorite falls that rarely cause damage."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="torinobtable">
+ <tr>
+  <td width="20%" ><center><b>Normal (Green Zone)</b></center></td><td width="20%" ><center><b>1</b></center></td><td width="60%" ><center>"A routine discovery in which a pass near the Earth is predicted that poses no unusual level of danger. Current calculations show the chance of collision is extremely unlikely with no cause for public attention or public concern. New telescopic observations very likely will lead to re-assignment to Level 0."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="torinoctable">
+ <tr>
+  <td width="20%" ><center><b>Meriting Attention by Astronomers (Yellow Zone)</b></center></td><td width="20%" ><center><b>2</b></center></td><td width="60%" ><center>"A discovery, which may become routine with expanded searches, of an object making a somewhat close but not highly unusual pass near the Earth. While meriting attention by astronomers, there is no cause for public attention or public concern as an actual collision is very unlikely. New telescopic observations very likely will lead to re-assignment to Level 0."</center></td>
+ </tr>
+ <tr>
+  <td width="20%" ><center><b>Meriting Attention by Astronomers (Yellow Zone)</b></center></td><td width="20%" ><center><b>3</b></center></td><td width="60%" ><center>"A close encounter, meriting attention by astronomers. Current calculations give a 1% or greater chance of collision capable of localized destruction. Most likely, new telescopic observations will lead to re-assignment to Level 0. Attention by public and by public officials is merited if the encounter is less than a decade away."</center></td>
+ </tr>
+ <tr>
+  <td width="20%" ><center><b>Meriting Attention by Astronomers (Yellow Zone)</b></center></td><td width="20%" ><center><b>4</b></center></td><td width="60%" ><center>"A close encounter, meriting attention by astronomers. Current calculations give a 1% or greater chance of collision capable of regional devastation. Most likely, new telescopic observations will lead to re-assignment to Level 0. Attention by public and by public officials is merited if the encounter is less than a decade away."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="torinodtable">
+ <tr>
+  <td width="20%" ><center><b>Threatening (Orange Zone)</b></center></td><td width="20%" ><center><b>5</b></center></td><td width="60%" ><center>"A close encounter posing a serious, but still uncertain threat of regional devastation. Critical attention by astronomers is needed to determine conclusively whether or not a collision will occur. If the encounter is less than a decade away, governmental contingency planning may be warranted."</center></td>
+ </tr>
+ <tr>
+  <td width="20%" ><center><b>Threatening (Orange Zone)</b></center></td><td width="20%" ><center><b>6</b></center></td><td width="60%" ><center>"A close encounter by a large object posing a serious but still uncertain threat of a global catastrophe. Critical attention by astronomers is needed to determine conclusively whether or not a collision will occur. If the encounter is less than three decades away, governmental contingency planning may be warranted."</center></td>
+ </tr>
+ <tr>
+  <td width="20%" ><center><b>Threatening (Orange Zone)</b></center></td><td width="20%" ><center><b>7</b></center></td><td width="60%" ><center>"A very close encounter by a large object, which if occurring this century, poses an unprecedented but still uncertain threat of a global catastrophe. For such a threat in this century, international contingency planning is warranted, especially to determine urgently and conclusively whether or not a collision will occur."</center></td>
+ </tr>
+</table>
+
+<table align="center" class="torinoetable">
+ <tr>
+  <td width="20%" ><center><b>Certain Collisions (Red Zone)</b></center></td><td width="20%" ><center><b>8</b></center></td><td width="60%" ><center>"A collision is certain, capable of causing localized destruction for an impact over land or possibly a tsunami if close offshore. Such events occur on average between once per 50 years and once per several 1000 years."</center></td>
+ </tr>
+ <tr>
+  <td width="20%" ><center><b>Certain Collisions (Red Zone)</b></center></td><td width="20%" ><center><b>9</b></center></td><td width="60%" ><center>"A collision is certain, capable of causing unprecedented regional devastation for a land impact or the threat of a major tsunami for an ocean impact. Such events occur on average between once per 10,000 years and once per 100,000 years."</center></td>
+ </tr>
+ <tr>
+  <td width="20%" ><center><b>Certain Collisions (Red Zone)</b></center></td><td width="20%" ><center><b>10</b></center></td><td width="60%" ><center>"A collision is certain, capable of causing global climatic catastrophe that may threaten the future of civilization as we know it, whether impacting land or ocean. Such events occur on average once per 100,000 years, or less often."</center></td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<a name="12"></a>
+<center><p style="font-size:22px"><b><u>UNITED STATES AIRPORT CODES:</u></b></p></center>
+
+<style style="text/css">
+   .airport{
+  width:85%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .airport td{ 
+  padding:8px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .airport tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .airport tr:hover {
+          background-color: #BFCEBB;
+    }
+</style>
+
+<table align="center" class="airport">
+ <tr>
+  <td><center>KABR</center></td><td><center>Aberdeen, SD</center></td><td><center>KGFK</center></td><td><center>Grand Forks, NC</center></td><td><center>KLGA</center></td><td><center>New York City, NY</center></td>
+ </tr>
+ <tr>
+  <td><center>KABQ</center></td><td><center>Albuquerque, NM</center></td><td><center>KGRR</center></td><td><center>Grand Rapids, MI</center></td><td><center>KPHF</center></td><td><center>Newport News, VA</center></td>
+ </tr>
+<tr>
+  <td><center>KAMA</center></td><td><center>Amarillo, TX</center></td><td><center>KGTF</center></td><td><center>Great Falls, MT</center></td><td><center>KOKC</center></td><td><center>Oklahoma City, OK</center></td>
+ </tr>
+<tr>
+  <td><center>PANC</center></td><td><center>Anchorage, AK</center></td><td><center>KGRB</center></td><td><center>Green Bay, WI</center></td><td><center>KOMA</center></td><td><center>Omaha, NE</center></td>
+ </tr>
+<tr>
+  <td><center>KAVL</center></td><td><center>Asheville, NC</center></td><td><center>KGSO</center></td><td><center>Greensboro, NC</center></td><td><center>KPIA</center></td><td><center>Peoria, IL</center></td>
+ </tr>
+<tr>
+  <td><center>KATL</center></td><td><center>Atlanta, GA</center></td><td><center>KPGV</center></td><td><center>Greenville, NC</center></td><td><center>KPHL</center></td><td><center>Philadelphia, PA</center></td>
+ </tr>
+<tr>
+  <td><center>KACY</center></td><td><center>Atlantic City, NJ</center></td><td><center>KGSP</center></td><td><center>Greenville, SC</center></td><td><center>KPHX</center></td><td><center>Phoenix, AZ</center></td>
+ </tr>
+<tr>
+  <td><center>KBWI</center></td><td><center>Baltimore, MD</center></td><td><center>KBDL</center></td><td><center>Hartford, CT</center></td><td><center>KPIT</center></td><td><center>Pittsburgh, PA</center></td>
+ </tr>
+<tr>
+  <td><center>KBGR</center></td><td><center>Bangor, ME</center></td><td><center>KHKY</center></td><td><center>Hickory, NC</center></td><td><center>KPWM</center></td><td><center>Portland, ME</center></td>
+ </tr>
+<tr>
+  <td><center>KBIL</center></td><td><center>Billings, MT</center></td><td><center>PHNL</center></td><td><center>Honolulu, HI</center></td><td><center>KPDX</center></td><td><center>Portland, OR</center></td>
+ </tr>
+<tr>
+  <td><center>KBHM</center></td><td><center>Birmingham, AL</center></td><td><center>KHSV</center></td><td><center>Huntsville, AL</center></td><td><center>KRDU</center></td><td><center>Raleigh, NC</center></td>
+ </tr>
+<tr>
+  <td><center>KBIS</center></td><td><center>Bismarck, ND</center></td><td><center>KIDA</center></td><td><center>Idaho Falls, ID</center></td><td><center>KRAP</center></td><td><center>Rapid City, SD</center></td>
+ </tr>
+<tr>
+  <td><center>KBOI</center></td><td><center>Boise, ID</center></td><td><center>KIND</center></td><td><center>Indianapolis, IN</center></td><td><center>KRNO</center></td><td><center>Reno, NV</center></td>
+ </tr>
+<tr>
+  <td><center>KBOS</center></td><td><center>Boston, MA</center></td><td><center>KINL</center></td><td><center>International Falls, MN</center></td><td><center>KRIC</center></td><td><center>Richmond, VA</center></td>
+ </tr>
+<tr>
+  <td><center>KBTV</center></td><td><center>Burlington, VT</center></td><td><center>KJAN</center></td><td><center>Jackson, MS</center></td><td><center>KIXA</center></td><td><center>Roanoke Rapids, NC</center></td>
+ </tr>
+<tr>
+  <td><center>KCPR</center></td><td><center>Casper, WY</center></td><td><center>KJAX</center></td><td><center>Jacksonville, FL</center></td><td><center>KROC</center></td><td><center>Rochester, NY</center></td>
+ </tr>
+<tr>
+  <td><center>KCHS</center></td><td><center>Charleston, SC</center></td><td><center>KOAJ</center></td><td><center>Jacksonville, NC</center></td><td><center>KRCZ</center></td><td><center>Rockingham-Hamlet, NC</center></td>
+ </tr>
+<tr>
+  <td><center>KCRW</center></td><td><center>Charleston, WV</center></td><td><center>KMCI</center></td><td><center>Kansas City, MO</center></td><td><center>KRWI</center></td><td><center>Rocky Mount, NC</center></td>
+ </tr>
+<tr>
+  <td><center>KCLT</center></td><td><center>Charlotte, NC</center></td><td><center>KEYW</center></td><td><center>Key West, FL</center></td><td><center>KSLC</center></td><td><center>Salt Lake City, UT</center></td>
+ </tr>
+<tr>
+  <td><center>KCYS</center></td><td><center>Cheyenne, WY</center></td><td><center>KISO</center></td><td><center>Kinston, NC</center></td><td><center>KSAY</center></td><td><center>San Antonio, TX</center></td>
+ </tr>
+<tr>
+  <td><center>KORD</center></td><td><center>Chicago, IL</center></td><td><center>KTYS</center></td><td><center>Knoxville, TN</center></td><td><center>KSFO</center></td><td><center>San Francisco, CA</center></td>
+ </tr>
+<tr>
+  <td><center>KCLE</center></td><td><center>Cleveland, OH</center></td><td><center>KLAS</center></td><td><center>Las Vegas, NV</center></td><td><center>KSAV</center></td><td><center>Savannah, GA</center></td>
+ </tr>
+<tr>
+  <td><center>KCOD</center></td><td><center>Cody, WY</center></td><td><center>KLWS</center></td><td><center>Lewiston, ID</center></td><td><center>KBFF</center></td><td><center>Scottsbluff, NE</center></td>
+ </tr>
+<tr>
+  <td><center>KCOS</center></td><td><center>Colorado Springs, CO</center></td><td><center>KLEX</center></td><td><center>Lexington, KY</center></td><td><center>KSEA</center></td><td><center>Seattle, WA</center></td>
+ </tr>
+<tr>
+  <td><center>KLCK</center></td><td><center>Columbus, OH</center></td><td><center>KLIT</center></td><td><center>Little Rock, AR</center></td><td><center>KSHV</center></td><td><center>Shreveport, LA</center></td>
+ </tr>
+<tr>
+  <td><center>KCVG</center></td><td><center>Covington, KY</center></td><td><center>KLAX</center></td><td><center>Los Angeles, CA</center></td><td><center>KFSD</center></td><td><center>Sioux Falls, SD</center></td>
+ </tr>
+<tr>
+  <td><center>KDFW</center></td><td><center>Dallas-Fort Worth, TX</center></td><td><center>KMEM</center></td><td><center>Memphis, TN</center></td><td><center>KSBN</center></td><td><center>South Bend, IN</center></td>
+ </tr>
+<tr>
+  <td><center>KDEN</center></td><td><center>Denver, CO</center></td><td><center>KMIA</center></td><td><center>Miami, FL</center></td><td><center>KSGF</center></td><td><center>Springfield, MO</center></td>
+ </tr>
+<tr>
+  <td><center>KDSM</center></td><td><center>Des Moines, IA</center></td><td><center>KMKE</center></td><td><center>Milwaukee, WI</center></td><td><center>KSTL</center></td><td><center>St. Louis, MO</center></td>
+ </tr>
+<tr>
+  <td><center>KDTW</center></td><td><center>Detroit, MI</center></td><td><center>KMSP</center></td><td><center>Minneapolis, MN</center></td><td><center>KUNV</center></td><td><center>State College, PA</center></td>
+ </tr>
+<tr>
+  <td><center>KDLH</center></td><td><center>Duluth, MN</center></td><td><center>KMOB</center></td><td><center>Mobile, AL</center></td><td><center>KTLH</center></td><td><center>Tallahassee, FL</center></td>
+ </tr>
+<tr>
+  <td><center>KEGC</center></td><td><center>Elizabeth City, NC</center></td><td><center>KMGM</center></td><td><center>Montgomery, AL</center></td><td><center>KTVC</center></td><td><center>Traverse City, MI</center></td>
+ </tr>
+<tr>
+  <td><center>KERI</center></td><td><center>Erie, PA</center></td><td><center>KACK</center></td><td><center>Nantucket, MA</center></td><td><center>KALO</center></td><td><center>Waterloo, IA</center></td>
+ </tr>
+<tr>
+  <td><center>KFAY</center></td><td><center>Fayetteville, NC</center></td><td><center>KBNA</center></td><td><center>Nashville, TN</center></td><td><center>KART</center></td><td><center>Watertown, NY</center></td>
+ </tr>
+<tr>
+  <td><center>KFLG</center></td><td><center>Flagstaff, AZ</center></td><td><center>KEWN</center></td><td><center>New Bern, NC</center></td><td><center>KICT</center></td><td><center>Wichita, KS</center></td>
+ </tr>
+<tr>
+  <td><center>KFWA</center></td><td><center>Fort Wayne, IN</center></td><td><center>KHVN</center></td><td><center>New Haven, CT</center></td><td><center>KILM</center></td><td><center>Wilmington, NC</center></td>
+ </tr>
+<tr>
+  <td><center>KGCK</center></td><td><center>Garden City, KS</center></td><td><center>KMSY</center></td><td><center>New Orleans, LA</center></td><td><center>KINT</center></td><td><center>Winston-Salem, NC</center></td>
+ </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name="13"></a>
+<center><p style="font-size:22px"><b><u>SNOWFALL/MELTWATER TABLE:</u></b></p></center>
+
+<center><p style="font-size:18px">This snowfall meltwater table displays how much snow would theoretically would fall to the ground if 1) all precipitation fell as snow and 2) how much QPF (Quantitative Precipitation Forecast) denoted as "<b><u>Meltwater Equivalent [inches]</u></b>" in this chart, is available. What you can take from this table is that the more moisture and QPF you have available, the more snow will fall, and that snow production rate increases rapidly with lowering air temperatures. <a href="http://www.theweatherprediction.com/habyhints/346/">Learn more here!</a></p></center>
+
+<style style="text/css">
+   .melt{
+  width:85%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .melt td{ 
+  padding:8px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .melt tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .melt tr:hover {
+          background-color: #94E2FF;
+    }
+</style>
+
+<table align="center" class="melt">
+
+ <tr>
+  <td width="34%" bgcolor="#BCB6FF"><center></center></td><td width="56%" bgcolor="#DFDFDF"><center><b><u>New Snowfall [inches]</u></b></center></td>
+ </tr>
+ <tr>
+  <td width="34%" bgcolor="#BCB6FF"><center><b><u>Meltwater Equivalent [inches]</u></b></center></td><td width="56%" bgcolor="#D9A2A2"><center><b><u>Temperature [&deg;F]</u></b></center></td>
+ </tr>
+
+</table>
+
+
+
+
+<table align="center" class="melt">
+
+ <tr>
+  <td width="34%"  bgcolor="#BCB6FF"><center></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>34 to 28</u></b></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>27 to 20</u></b></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>19 to 15</u></b></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>14 to 10</u></b></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>9 to 0</u></b></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>-1 to -20</u></b></center></td><td width="8%"  bgcolor="#D9A2A2"><center><b><u>-21 to -40</u></b></center></td>
+ </tr>
+ <tr>
+  <td><center>TRACE</center></td><td><center>TRACE</center></td><td><center>0.1</center></td><td><center>0.2</center></td><td><center>0.3</center></td><td><center>0.4</center></td><td><center>0.5</center></td><td><center>1.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.01</center></td><td><center>0.1</center></td><td><center>0.2</center></td><td><center>0.2</center></td><td><center>0.3</center></td><td><center>0.4</center></td><td><center>0.5</center></td><td><center>1.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.02</center></td><td><center>0.2</center></td><td><center>0.3</center></td><td><center>0.4</center></td><td><center>0.6</center></td><td><center>0.8</center></td><td><center>1.0</center></td><td><center>2.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.03</center></td><td><center>0.3</center></td><td><center>0.5</center></td><td><center>0.6</center></td><td><center>0.9</center></td><td><center>1.2</center></td><td><center>1.5</center></td><td><center>3.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.04</center></td><td><center>0.4</center></td><td><center>0.6</center></td><td><center>0.8</center></td><td><center>1.2</center></td><td><center>1.6</center></td><td><center>2.0</center></td><td><center>4.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.05</center></td><td><center>0.5</center></td><td><center>0.8</center></td><td><center>1.0</center></td><td><center>1.5</center></td><td><center>2.0</center></td><td><center>2.5</center></td><td><center>5.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.06</center></td><td><center>0.6</center></td><td><center>0.9</center></td><td><center>1.2</center></td><td><center>1.8</center></td><td><center>2.4</center></td><td><center>3.0</center></td><td><center>6.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.07</center></td><td><center>0.7</center></td><td><center>1.1</center></td><td><center>1.4</center></td><td><center>2.1</center></td><td><center>2.8</center></td><td><center>3.5</center></td><td><center>7.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.08</center></td><td><center>0.8</center></td><td><center>1.2</center></td><td><center>1.6</center></td><td><center>2.4</center></td><td><center>3.2</center></td><td><center>4.0</center></td><td><center>8.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.09</center></td><td><center>0.9</center></td><td><center>1.4</center></td><td><center>1.8</center></td><td><center>2.7</center></td><td><center>3.6</center></td><td><center>4.5</center></td><td><center>9.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.10</center></td><td><center>1.0</center></td><td><center>1.5</center></td><td><center>2.0</center></td><td><center>3.0</center></td><td><center>4.0</center></td><td><center>5.0</center></td><td><center>10.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.11</center></td><td><center>1.1</center></td><td><center>1.7</center></td><td><center>2.2</center></td><td><center>3.3</center></td><td><center>4.4</center></td><td><center>5.5</center></td><td><center>11.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.12</center></td><td><center>1.2</center></td><td><center>1.8</center></td><td><center>2.4</center></td><td><center>3.6</center></td><td><center>4.8</center></td><td><center>6.0</center></td><td><center>12.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.13</center></td><td><center>1.3</center></td><td><center>2.0</center></td><td><center>2.6</center></td><td><center>3.9</center></td><td><center>5.2</center></td><td><center>6.5</center></td><td><center>13.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.14</center></td><td><center>1.4</center></td><td><center>2.1</center></td><td><center>2.8</center></td><td><center>4.2</center></td><td><center>5.6</center></td><td><center>7.0</center></td><td><center>14.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.15</center></td><td><center>1.5</center></td><td><center>2.3</center></td><td><center>3.0</center></td><td><center>4.5</center></td><td><center>6.0</center></td><td><center>7.5</center></td><td><center>15.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.16</center></td><td><center>1.6</center></td><td><center>2.4</center></td><td><center>3.2</center></td><td><center>4.8</center></td><td><center>6.4</center></td><td><center>8.0</center></td><td><center>16.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.17</center></td><td><center>1.7</center></td><td><center>2.6</center></td><td><center>3.4</center></td><td><center>5.1</center></td><td><center>6.8</center></td><td><center>8.5</center></td><td><center>17.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.18</center></td><td><center>1.8</center></td><td><center>2.7</center></td><td><center>3.6</center></td><td><center>5.4</center></td><td><center>7.2</center></td><td><center>9.0</center></td><td><center>18.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.19</center></td><td><center>1.9</center></td><td><center>2.9</center></td><td><center>3.8</center></td><td><center>5.7</center></td><td><center>7.6</center></td><td><center>9.5</center></td><td><center>19.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.20</center></td><td><center>2.0</center></td><td><center>3.0</center></td><td><center>4.0</center></td><td><center>6.0</center></td><td><center>8.0</center></td><td><center>10.0</center></td><td><center>20.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.21</center></td><td><center>2.1</center></td><td><center>3.1</center></td><td><center>4.2</center></td><td><center>6.3</center></td><td><center>8.4</center></td><td><center>10.5</center></td><td><center>21.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.22</center></td><td><center>2.2</center></td><td><center>3.3</center></td><td><center>4.4</center></td><td><center>6.6</center></td><td><center>8.8</center></td><td><center>11.0</center></td><td><center>22.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.23</center></td><td><center>2.3</center></td><td><center>3.4</center></td><td><center>4.6</center></td><td><center>6.9</center></td><td><center>9.2</center></td><td><center>11.5</center></td><td><center>23.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.24</center></td><td><center>2.4</center></td><td><center>3.6</center></td><td><center>4.8</center></td><td><center>7.2</center></td><td><center>9.6</center></td><td><center>12.0</center></td><td><center>24.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.25</center></td><td><center>2.5</center></td><td><center>3.8</center></td><td><center>5.0</center></td><td><center>7.5</center></td><td><center>10.0</center></td><td><center>12.5</center></td><td><center>25.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.30</center></td><td><center>3.0</center></td><td><center>4.5</center></td><td><center>6.0</center></td><td><center>9.0</center></td><td><center>12.0</center></td><td><center>15.0</center></td><td><center>30.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.35</center></td><td><center>3.5</center></td><td><center>5.3</center></td><td><center>7.0</center></td><td><center>10.5</center></td><td><center>14.0</center></td><td><center>17.5</center></td><td><center>35.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.40</center></td><td><center>4.0</center></td><td><center>6.0</center></td><td><center>8.0</center></td><td><center>12.0</center></td><td><center>16.0</center></td><td><center>20.0</center></td><td><center>40.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.45</center></td><td><center>4.5</center></td><td><center>6.8</center></td><td><center>9.0</center></td><td><center>13.5</center></td><td><center>18.0</center></td><td><center>22.5</center></td><td><center>45.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.50</center></td><td><center>5.0</center></td><td><center>7.5</center></td><td><center>10.0</center></td><td><center>15.0</center></td><td><center>20.0</center></td><td><center>25.0</center></td><td><center>50.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.60</center></td><td><center>6.0</center></td><td><center>9.0</center></td><td><center>12.0</center></td><td><center>18.0</center></td><td><center>24.0</center></td><td><center>30.0</center></td><td><center>60.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.70</center></td><td><center>7.0</center></td><td><center>10.5</center></td><td><center>14.0</center></td><td><center>21.0</center></td><td><center>28.0</center></td><td><center>35.0</center></td><td><center>70.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.80</center></td><td><center>8.0</center></td><td><center>12.0</center></td><td><center>16.0</center></td><td><center>24.0</center></td><td><center>32.0</center></td><td><center>40.0</center></td><td><center>80.0</center></td>
+ </tr>
+ <tr>
+  <td><center>.90</center></td><td><center>9.0</center></td><td><center>13.5</center></td><td><center>18.0</center></td><td><center>27.0</center></td><td><center>36.0</center></td><td><center>45.0</center></td><td><center>90.0</center></td>
+ </tr>
+ <tr>
+  <td><center>1.00</center></td><td><center>10.0</center></td><td><center>15.0</center></td><td><center>20.0</center></td><td><center>30.0</center></td><td><center>40.0</center></td><td><center>50.0</center></td><td><center>100.00</center></td>
+ </tr>
+ <tr>
+  <td><center>2.00</center></td><td><center>20.0</center></td><td><center>30.0</center></td><td><center>40.0</center></td><td><center>60.0</center></td><td><center>80.0</center></td><td><center>100.00</center></td><td><center>200.00</center></td>
+ </tr>
+ <tr>
+  <td><center>3.00</center></td><td><center>30.0</center></td><td><center>45.0</center></td><td><center>60.0</center></td><td><center>90.0</center></td><td><center>120.00</center></td><td><center>150.00</center></td><td><center>300.00</center></td>
+ </tr>
+
+</table>
+
+
+
+
+
+
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<a name="14"></a>
+<div>
+<center><p style="font-size:22px"><b><u>CLOUD TYPES:</u></b></p></center>
+
+<style style="text/css">
+   .cloud{
+  width:95%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .cloud td{ 
+  padding:4.5px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .cloud tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .cloud tr:hover {
+          background-color: #CCFCFF;
+    }
+</style>
+
+<table align="center" class="cloud">
+ <tr>
+ <td width="15%" bgcolor="#DFDFDF"><center><u><b>Genus</b></u></center></td><td bgcolor="#DFDFDF"><center><u><b>Image</b></u></center></td><td width="10%"  bgcolor="#DFDFDF"><center><u><b>Altitude [feet]</b></u></center></td><td  width="10%" bgcolor="#DFDFDF"><center><u><b>Composition</b></u></center></td><td bgcolor="#DFDFDF"><center><u><b>Indication</b></u></center></td>
+ </tr>
+ <tr>
+  <td><center>Cirrus [Ci]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/577004487.jpg" style="width:300px;height:200px;"></center></td><td><center>> 20,000 ft</center></td><td><center>Ice crystals</center></td><td><center>Fair weather; Uniform cirrus indicate an approaching warm front</center></td>
+ </tr>
+ <tr>
+  <td><center>Cirrocumulus [Cc]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/639175260.jpg" style="width:300px;height:200px;"></center></td><td><center>> 20,000 ft</center></td><td><center>Primarily ice crystals</center></td><td><center>In winter, indicate fair, cold weather; At tropical latitudes, Cc may indicate an approaching tropical cyclone</center></td>
+ </tr>
+<tr>
+  <td><center>Cirrostratus [Cs]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/208179190.jpg" style="width:300px;height:200px;"></center></td><td><center>>= 20,000 ft</center></td><td><center>Ice crystals</center></td><td><center>Signals an approaching warm front if Cs thicken; Forms when layer of air lifted by convergence</center></td>
+ </tr>
+<tr>
+  <td><center>Altostratus [As]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/378706425.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 6,500 and 20,000 ft</center></td><td><center>Water droplets</center></td><td><center>Signals incoming continuous rain or snow; Occasionally, rain may fall from As</center></td>
+ </tr>
+<tr>
+  <td><center>Altocumulus [Ac]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/479470835.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 6,500 and 20,000 ft</center></td><td><center>Primarily of water droplets</center></td><td><center>Presence of Ac on a warm, humid summer morning suggest afternoon thunderstorms; Ac form in an unstable layer aloft</center></td>
+ </tr>
+<tr>
+  <td><center>Stratocumulus [Sc]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/583706940.jpg" style="width:300px;height:200px;"></center></td><td><center>Generally < 6,500 ft</center></td><td><center>Water droplets</center></td><td><center>Sc generally represent improving weather conditions; During winter, stable weather likely</center></td>
+ </tr>
+<tr>
+  <td><center>Cumulonimbus [Cb]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/197592256.jpg" style="width:300px;height:200px;"></center></td><td><center>Up to 50,000+ ft</center></td><td><center>Mixed phase</center></td><td><center>Convective/stormy weather in the vicinity; NOTE: Lightning can strike well outside of these clouds - Always remain aware of your weather surroundings</center></td>
+ </tr>
+<tr>
+  <td><center>Cumulus [Cu]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/dsc06633_orig.jpg" style="width:300px;height:200px;"></center></td><td><center>< 6,500 ft</center></td><td><center>Water droplets</center></td><td><center>As long as no vertical development is taking place, Cu indicate fair weather</center></td>
+ </tr>
+<tr>
+  <td><center>Nimbostratus [Ns]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/208698776.jpg" style="width:300px;height:200px;"></center></td><td><center>< 6,500 ft</center></td><td><center>Primarily of water droplets; can contain ice crystals in sub-freezing air temperature</center></td><td><center>Ns are precipitation clouds; Ns are accompanied by light to moderate falling precipitation</center></td>
+ </tr>
+<tr>
+  <td><center>Shelf/Arcus [-]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/424261902.jpg" style="width:300px;height:200px;"></center></td><td><center>< 6,500 ft</center></td><td><center>Water development</center></td><td><center>Approaching thunderstorm; Form when cool, sinking air from a storm's downdraft spread out ahead of the storm</center></td>
+ </tr>
+<tr>
+  <td><center>Wall Cloud [-]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/261400557.jpg" style="width:300px;height:200px;"></center></td><td><center>< 4,000 ft</center></td><td><center>Water droplets</center></td><td><center>Severe weather is occurring nearby; These clouds mean trouble. Wall clouds often rotate and are usually the location where tornadoes form in a thunderstorm</center></td>
+ </tr>
+<tr>
+  <td><center>Scud/Fractus [-]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/857337607.jpg" style="width:300px;height:200px;"></center></td><td><center>< 4,000 ft</center></td><td><center>Water droplets</center></td><td><center>If you are seeing scud clouds, that means that a parent thunderstorm clouds is nearby, where rain, hail, gusty winds, and lightning is likely occurring; Rain will very likely start soon</center></td>
+ </tr>
+<tr>
+  <td><center>Mammatus [CBMAM]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/287582433.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 30,000 and 50,000 ft</center></td><td><center>Water droplets; Often mixed phase with ice crystals as well</center></td><td><center>These clouds occur when moist air sinks into a layer of dry air, creating pouch-like clouds; These clouds signal a nearby, thunderstorm, usually an intense one, and typically appear after the passage of said storm</center></td>
+ </tr>
+<tr>
+  <td><center>Contrails [-]</center></td><td><center><img src="http://chemtrailswatch.com/wp-content/uploads/2014/10/contrails-001.jpg?w=84&h=84&crop=1" style="width:300px;height:200px;"></center></td><td><center>Between 25,000 and ~60,000 ft</center></td><td><center>Primarily water droplets; can also contain sulfurous compounds or jet fuel impurities</center></td><td><center>Contrails form when there is ample moisture in the high levels of the atmosphere and the air is very cold; Short lived contrails may indicate fair weather due to the relatively dry air, and conversely, long-lived contrails may suggest a changing weather pattern (see the <a href="http://www.andrewswxcenter.com/p/weather-101.html#11" target="_blank">Appleman Chart</a> above)</center></td>
+ </tr>
+<tr>
+  <td><center>Noctilucent [NLC]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/141497388.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 250,000 and 280,000 ft</center></td><td><center>Dust particles and water vapor</center></td><td><center>These polar mesospheric clouds form when temperatures in the mesosphere are below -200 degrees Fahrenheit, causing water droplets to freeze into ice clouds</center></td>
+ </tr>
+</table>
+
+</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<style style="text/css">
+   .models{
+  width:99%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .models td{ 
+  padding:9px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .models tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .models tr:hover {
+          background-color: #00DEB6;
+    }
+</style>
+
+<a name="15"></a>
+
+<div style="height:1600px;">
+<center><p style="font-size:22px"><b><u>NUMERICAL WEATHER PREDICTION MODELS:</u></b></p></center>
+<table align="center" class="models">
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Model Abbreviation</u></center></td><td bgcolor="#DFDFDF"><center><u>Model Name</u></center></td><td bgcolor="#DFDFDF"><center><u>Source Country</u></center></td><td bgcolor="#DFDFDF"><center><u>Forecast Output Time</u></center></td><td bgcolor="#DFDFDF"><center><u>Availibility<br>[UTC|EST]</u></center></td>
+ </tr>
+ <tr>
+  <td><center>GFS</center></td><td><center>Global Forecast System</center></td><td><center>USA</center></td><td><center>384 hours<br>[3 hour intervals through 240 hrs<br>12 hour intervals from 252 hr to 384hr]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>NAM</center></td><td><center>North American Mesoscale Forecast System</center></td><td><center>USA</center></td><td><center>84 hours<br>[3 hour intervals]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>RAP</center></td><td><center>Rapid Refresh</center></td><td><center>USA</center></td><td><center>18 hours<br>[1 hour intervals]</center></td><td><center>24 times per day [Hourly]</center></td>
+ </tr>
+ <tr>
+  <td><center>SREF</center></td><td><center>Short Range Ensemble Forecast</center></td><td><center>USA</center></td><td><center>87 hours<br>[3 hour intervals]</center></td><td><center>4 times per day*<br>[03, 09, 15, 21 UTC]<br>[10PM, 4AM, 10AM, 4PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>HRRR</center></td><td><center>High Resolution Rapid Refresh</center></td><td><center>USA</center></td><td><center>15 hours<br>[1 hour intervals]</center></td><td><center>24 times per day [Hourly]</center></td>
+ </tr>
+ <tr>
+  <td><center>ECMWF</center></td><td><center>European Centre for Medium-Range Weather Forecasts</center></td><td><center>United Kingdom</center></td><td><center>168 hours<br>[24 hour intervals]</center></td><td><center>2 times per day<br>[00, 12]<br>[~2AM, ~2PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>GEFS</center></td><td><center>Global Ensemble Forecast System</center></td><td><center>USA</center></td><td><center>384 hours<br>[6 hour intervals]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>GDAS</center></td><td><center>Global Data Assimilation System</center></td><td><center>USA</center></td><td><center>9 hours<br>[3 hour intervals]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>NAVGEM (Replaced NOGAPS)</center></td><td><center>Navy Global Environmental Model</center></td><td><center>USA</center></td><td><center>144 Hours<br>[3,6,12 hour intervals]</center></td><td><center>2 times per day<br>[10, 23 UTC]<br>[5AM, 6PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>UKMET</center></td><td><center>United Kingdom Meteorological Office Unified Prediction Model</center></td><td><center>United Kingdom</center></td><td><center>144 hours<br>[6 hour intervals]</center></td><td><center>2 times per day<br>[00, 12 UTC]<br>[7PM, 7AM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>WRF</center></td><td><center>Weather Research & Forecasting Model</center></td><td><center>USA</center></td><td><center>72 hours<br>[3 hour intervals]</center></td><td><center>2 times per day<br>[00, 12 UTC]<br>[7PM, 7AM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>WRF-NMM</center></td><td><center>Nonhydrostatic Mesoscale Model of the Weather Research & Forecasting System</center></td><td><center>USA</center></td><td><center>36 hours<br>[1 hour intervals]</center></td><td><center>2 times per day<br>[00, 12 UTC]<br>[7PM, 7AM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>JMA (GSM)</center></td><td><center>Japan Meteorological Agency Global Spectral Model</center></td><td><center>Japan</center></td><td><center>84, 264 hours<br>[3,6,12 hour intervals |<br>264 hr once per day]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>CMC (GDPS)</center></td><td><center>Canadian Meteorological Centre (Global Deterministic Prediction System)</center></td><td><center>Canada</center></td><td><center>144 hours<br>[12 hour intervals]</center></td><td><center>-</center></td>
+ </tr>
+ <tr>
+  <td><center>GEM</center></td><td><center>Global Environmental Multiscale Model</center></td><td><center>Canada</center></td><td><center>144 hours<br>[12 hour intervals]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+ <tr>
+  <td><center>CFS</center></td><td><center>Climate Forecast System v2</center></td><td><center>USA</center></td><td><center>798 hours<br>[6 hour intervals]</center></td><td><center>4 times per day<br>[00, 06, 12, 18 UTC]<br>[7PM, 1AM, 7AM, 1PM EST]</center></td>
+ </tr>
+
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<style style="text/css">
+   .meteors{
+  width:99%; 
+  height:auto;
+  border-collapse:collapse; 
+ }
+ .meteors td{ 
+  padding:12px; border:#000000 1px solid;
+ }
+ /* Define the default color for all the table rows */
+ .meteors tr{
+  background: #FFFFFF;
+ }
+ /* Define the hover highlight color for the table row */
+    .meteors tr:hover {
+          background-color: #BDB0FF;
+    }
+</style>
+
+<a name="16"></a>
+
+<div style="height:800px;">
+<center><p style="font-size:22px"><b><u>ANNUAL METEOR SHOWERS:</u></b></p></center>
+<table align="center" class="meteors">
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Meteor Shower Name:</u></center></td><td bgcolor="#DFDFDF"><center><u>Pronounciation:</u></center></td><td bgcolor="#DFDFDF"><center><u>Peak Nights:</u></center></td><td bgcolor="#DFDFDF"><center><u>Mean Meteor Velocity:</u></center></td><td bgcolor="#DFDFDF"><center><u>Best Viewed From:</u></center></td>
+ </tr>
+ <tr>
+  <td><center>Quadrantids</center></td><td><center>[kwa-DRAN-tids]</center></td><td><center>January 3-4</center></td><td><center>26 miles/sec [medium]</center></td><td><center>Northern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Lyrids</center></td><td><center>[LIE-rids]</center></td><td><center>April 22-23</center></td><td><center>30 miles/sec [medium]</center></td><td><center>Northern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Eta Aquariids</center></td><td><center>[EIGHT-a ACK-wah-rids]</center></td><td><center>May 6-7</center></td><td><center>42 miles/sec [swift]</center></td><td><center>Southern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Alpha Capricornids</center></td><td><center>[AL-fa CAP-rih-CORN-ids]</center></td><td><center>July 27-28</center></td><td><center>15 miles/sec [slow]</center></td><td><center>Everywhere</center></td>
+ </tr>
+ <tr>
+  <td><center>Delta Aquariids</center></td><td><center>[DEL-ta ACK-wah-rids]</center></td><td><center>July 28-29</center></td><td><center>26 miles/sec [medium]</center></td><td><center>Southern Hemisphere/Tropics</center></td>
+ </tr>
+ <tr>
+  <td><center>Perseids</center></td><td><center>[PURR-see-ids]<br>NOT "Per-sade"</center></td><td><center>August 12-13</center></td><td><center>37 miles/sec [swift]</center></td><td><center>Northern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Orionids</center></td><td><center>[o-RYAN-ids]</center></td><td><center>October 21-22</center></td><td><center>41 miles/sec [swift]</center></td><td><center>Everywhere</center></td>
+ </tr>
+ <tr>
+  <td><center>Southern Taurids</center></td><td><center>[southern TORR-ids]</center></td><td><center>October 23-24</center></td><td><center>17 miles/sec [slow]</center></td><td><center>Southern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Northern Taurids</center></td><td><center>[northern TORR-ids]</center></td><td><center>November 11-12</center></td><td><center>18 miles/sec [medium]</center></td><td><center>Northern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Leonids</center></td><td><center>[LEO-nids]</center></td><td><center>November 17-18</center></td><td><center>44 miles/sec [swift]</center></td><td><center>Everywhere</center></td>
+ </tr>
+ <tr>
+  <td><center>Geminids</center></td><td><center>[JIM-o-nids]</center></td><td><center>December 13-14</center></td><td><center>22 miles/sec [medium]</center></td><td><center>Northern Hemisphere</center></td>
+ </tr>
+ <tr>
+  <td><center>Ursids</center></td><td><center>[ER-sids]</center></td><td><center>December 21-22</center></td><td><center>20 miles/sec [medium]</center></td><td><center>Northern Hemisphere Only</center></td>
+ </tr>
+
+</table>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48490318-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
