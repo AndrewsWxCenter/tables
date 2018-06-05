@@ -1036,7 +1036,7 @@ function timeConverter(source,valNum) {
 
 <!-- Watch/Warning/Advisory Table: ----------------------------------------------------- -->
 <table align="center" class="emertable">
-<caption style="font-weight:bold; font-size:17px";>UNDERSTANDING WEATHER ALERTS<br></caption>
+<caption style="font-weight:bold; font-size:17px";>UNDERSTANDING WEATHER ALERTS:<br></caption>
  <tr>
   <td width="30%" bgcolor="#B36262"><center><b>EMERGENCY</b></center></td><td><center>Significant and life-threatening weather is about to occur in a densely populated area. Seek sturdy shelter with extreme haste, as dangerous weather has been <b><i>observed or confirmed on the ground</i></b>. Weather emergencies are rare, but must be taken with the utmost seriousness when issued.</center></td>
  </tr>
@@ -1147,6 +1147,73 @@ function timeConverter(source,valNum) {
   <td><center>2300</center></td><td><center>7:00 PM</center></td><td><center>6:00 PM</center></td>
  </tr>
 </table>
+
+
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Cloud Identification Table: ----------------------------------------------------- -->
+<table align="center" class="cloud">
+<caption style="font-weight:bold; font-size:17px";>CLOUD IDENTIFICATION TABLE:<br></caption>
+ <tr>
+ <td width="15%" bgcolor="#DFDFDF"><center><u><b>Genus</b></u></center></td><td bgcolor="#DFDFDF"><center><u><b>Image</b></u></center></td><td width="10%"  bgcolor="#DFDFDF"><center><u><b>Altitude [feet]</b></u></center></td><td  width="10%" bgcolor="#DFDFDF"><center><u><b>Composition</b></u></center></td><td bgcolor="#DFDFDF"><center><u><b>Indication</b></u></center></td>
+ </tr>
+ <tr>
+  <td><center>Cirrus [Ci]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/577004487.jpg" style="width:300px;height:200px;"></center></td><td><center>> 20,000 ft</center></td><td><center>Ice crystals</center></td><td><center>Fair weather; Uniform cirrus indicate an approaching warm front</center></td>
+ </tr>
+ <tr>
+  <td><center>Cirrocumulus [Cc]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/639175260.jpg" style="width:300px;height:200px;"></center></td><td><center>> 20,000 ft</center></td><td><center>Primarily ice crystals</center></td><td><center>In winter, indicate fair, cold weather; At tropical latitudes, Cc may indicate an approaching tropical cyclone</center></td>
+ </tr>
+<tr>
+  <td><center>Cirrostratus [Cs]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/208179190.jpg" style="width:300px;height:200px;"></center></td><td><center>>= 20,000 ft</center></td><td><center>Ice crystals</center></td><td><center>Signals an approaching warm front if Cs thicken; Forms when layer of air lifted by convergence</center></td>
+ </tr>
+<tr>
+  <td><center>Altostratus [As]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/378706425.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 6,500 and 20,000 ft</center></td><td><center>Water droplets</center></td><td><center>Signals incoming continuous rain or snow; Occasionally, rain may fall from As</center></td>
+ </tr>
+<tr>
+  <td><center>Altocumulus [Ac]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/479470835.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 6,500 and 20,000 ft</center></td><td><center>Primarily of water droplets</center></td><td><center>Presence of Ac on a warm, humid summer morning suggest afternoon thunderstorms; Ac form in an unstable layer aloft</center></td>
+ </tr>
+<tr>
+  <td><center>Stratocumulus [Sc]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/583706940.jpg" style="width:300px;height:200px;"></center></td><td><center>Generally < 6,500 ft</center></td><td><center>Water droplets</center></td><td><center>Sc generally represent improving weather conditions; During winter, stable weather likely</center></td>
+ </tr>
+<tr>
+  <td><center>Cumulonimbus [Cb]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/197592256.jpg" style="width:300px;height:200px;"></center></td><td><center>Up to 50,000+ ft</center></td><td><center>Mixed phase</center></td><td><center>Convective/stormy weather in the vicinity; NOTE: Lightning can strike well outside of these clouds - Always remain aware of your weather surroundings</center></td>
+ </tr>
+<tr>
+  <td><center>Cumulus [Cu]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/dsc06633_orig.jpg" style="width:300px;height:200px;"></center></td><td><center>< 6,500 ft</center></td><td><center>Water droplets</center></td><td><center>As long as no vertical development is taking place, Cu indicate fair weather</center></td>
+ </tr>
+<tr>
+  <td><center>Nimbostratus [Ns]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/208698776.jpg" style="width:300px;height:200px;"></center></td><td><center>< 6,500 ft</center></td><td><center>Primarily of water droplets; can contain ice crystals in sub-freezing air temperature</center></td><td><center>Ns are precipitation clouds; Ns are accompanied by light to moderate falling precipitation</center></td>
+ </tr>
+<tr>
+  <td><center>Shelf/Arcus [-]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/424261902.jpg" style="width:300px;height:200px;"></center></td><td><center>< 6,500 ft</center></td><td><center>Water development</center></td><td><center>Approaching thunderstorm; Form when cool, sinking air from a storm's downdraft spread out ahead of the storm</center></td>
+ </tr>
+<tr>
+  <td><center>Wall Cloud [-]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/261400557.jpg" style="width:300px;height:200px;"></center></td><td><center>< 4,000 ft</center></td><td><center>Water droplets</center></td><td><center>Severe weather is occurring nearby; These clouds mean trouble. Wall clouds often rotate and are usually the location where tornadoes form in a thunderstorm</center></td>
+ </tr>
+<tr>
+  <td><center>Scud/Fractus [-]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/857337607.jpg" style="width:300px;height:200px;"></center></td><td><center>< 4,000 ft</center></td><td><center>Water droplets</center></td><td><center>If you are seeing scud clouds, that means that a parent thunderstorm clouds is nearby, where rain, hail, gusty winds, and lightning is likely occurring; Rain will very likely start soon</center></td>
+ </tr>
+<tr>
+  <td><center>Mammatus [CBMAM]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/287582433.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 30,000 and 50,000 ft</center></td><td><center>Water droplets; Often mixed phase with ice crystals as well</center></td><td><center>These clouds occur when moist air sinks into a layer of dry air, creating pouch-like clouds; These clouds signal a nearby, thunderstorm, usually an intense one, and typically appear after the passage of said storm</center></td>
+ </tr>
+<tr>
+  <td><center>Contrails [-]</center></td><td><center><img src="http://chemtrailswatch.com/wp-content/uploads/2014/10/contrails-001.jpg?w=84&h=84&crop=1" style="width:300px;height:200px;"></center></td><td><center>Between 25,000 and ~60,000 ft</center></td><td><center>Primarily water droplets; can also contain sulfurous compounds or jet fuel impurities</center></td><td><center>Contrails form when there is ample moisture in the high levels of the atmosphere and the air is very cold; Short lived contrails may indicate fair weather due to the relatively dry air, and conversely, long-lived contrails may suggest a changing weather pattern (see the <a href="http://www.andrewswxcenter.com/p/weather-101.html#11" target="_blank">Appleman Chart</a> above)</center></td>
+ </tr>
+<tr>
+  <td><center>Noctilucent [NLC]</center></td><td><center><img src="http://andrewswxcenter.weebly.com/uploads/1/7/8/0/17808599/141497388.jpg" style="width:300px;height:200px;"></center></td><td><center>Between 250,000 and 280,000 ft</center></td><td><center>Dust particles and water vapor</center></td><td><center>These polar mesospheric clouds form when temperatures in the mesosphere are below -200 degrees Fahrenheit, causing water droplets to freeze into ice clouds</center></td>
+ </tr>
+</table>
+
+
 
 
 
