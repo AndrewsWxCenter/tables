@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function tempConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputFah = document.getElementById("inputFah");
+  var inputCel = document.getElementById("inputCel");
+  var inputKel = document.getElementById("inputKel");
+  var inputRan = document.getElementById("inputRan");
+
+  if (source=="inputFah") {
+    inputCel.value=(valNum*0.55555-17.77777).toFixed(2);
+    inputKel.value=(valNum*0.55555+255.37222).toFixed(2);
+    inputRan.value=(valNum*1+459.67).toFixed(2);
+  }
+  if (source=="inputCel") {
+    inputFah.value=(valNum*1.8+32).toFixed(2);
+    inputKel.value=(valNum*1+273.15).toFixed(2);
+    inputRan.value=(valNum*1+273.15*1.8).toFixed(2);
+  }
+  if (source=="inputKel") {
+    inputFah.value=(valNum*1.8-459.67).toFixed(2);
+    inputCel.value=(valNum*1-273.15).toFixed(2);
+    inputRan.value=(valNum*1.8).toFixed(2);
+  }
+  if (source=="inputRan") {
+    inputFah.value=(valNum*1-459.67).toFixed(2);
+    inputCel.value=(valNum*1-491.67*0.55555).toFixed(2);
+    inputKel.value=(valNum*0.55555).toFixed(2);
+  }
+}
+
+</script>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+<input id="inputFah" type="number" placeholder="Enter in degrees F" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Fahrenheit</label>
+
+<br>
+
+<input id="inputCel" type="number" placeholder="Enter in degrees C" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Celsius</label>
+
+<br>
+
+<input id="inputKel" type="number" placeholder="Enter in degrees K" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Kelvin</label>
+
+<br>
+
+<input id="inputRan" type="number" placeholder="Enter in degrees R" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Rankine</label>
+
+
+
+</body>
+</html>
