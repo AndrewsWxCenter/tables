@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+</head>
+
+<body>
+
+<!-- EF-SCALE TABLE: ----------------------------------------------------- -->
+<table align="center" class="fujita">
+<caption style="font-weight:bold; font-size:17px";>ENHANCED-FUJITA SCALE TABLE:<br></caption>
+ <tr>
+ <td><center><u><b>EF Rating</b></u></center></td><td><center><u><b>Wind Speed [mph]</b></u></center></td><td><center><u><b>Damage Indicators</b></u></center></td><td><center><u><b>Example Image</b></u></center></td>
+ </tr>
+ <tr>
+  <td><center>EF0</center></td><td><center>65-85</center></td><td><center>Light damage; peels surface off of some roofs; shallow-rooted trees uprooted or pushed over</center></td><td><center><img src="https://andrewswxcenter.com/images/ef0_damage.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>EF1</center></td><td><center>86-110</center></td><td><center>Moderate damage; roofs severely stripped; windows or other glass broken; mobile homes overturned or badly damaged</center></td><td><center><img src="https://andrewswxcenter.com/images/ef1_damage.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>EF2</center></td><td><center>111-135</center></td><td><center>Considerable damage; roofs torn off well-constructed houses; foundations of frame homes shifted; light-object missiles generated; cars lifted off ground</center></td><td><center><img src="https://andrewswxcenter.com/images/ef2_damage.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>EF3</center></td><td><center>136-165</center></td><td><center>Severe damage; heavy cars lifted off the ground and thrown; trains overturned; entire stories of well-constructed buildings destroyed; severe damage to large buildings</center></td><td><center><img src="https://andrewswxcenter.com/images/ef3_damage.JPG" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>EF4</center></td><td><center>166-200</center></td><td><center>Devastating damage; whole frame houses and well-constructed buildings completely leveled; cars thrown long distances, and small missiles generated</center></td><td><center><img src="https://andrewswxcenter.com/images/ef4_damage.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>EF5</center></td><td><center>200+</center></td><td><center>Incredible damage; incredible phenomena will occur; car-sized missiles fly through the air in excess of 100 meters, high-rise buildings have significant damage; large buildings obliterated</center></td><td><center><img src="https://andrewswxcenter.com/images/ef5_damage.png" style="width:300px;height:200px;"></center></td>
+ </tr>
+</table>
+
+
+</body>
+</html>
