@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+</head>
+
+<body>
+
+<!-- SAFFIR-SIMPSON SCALE: ----------------------------------------------------- -->
+<table align="center" class="hurricane">
+<caption style="font-weight:bold; font-size:17px";>SAFFIR-SIMPSON SCALE TABLE:<br></caption>
+ <tr>
+ <td><center><u><b>Category</b></u></center></td><td><center><u><b>Wind Speed [mph]</b></u></center></td><td><center><u><b>Storm Surge [ft]</b></u></center></td><td><center><u><b>Mean Minimum Surface Pressure [mb]</b></u></center></td><td><center><u><b>Example Image</b></u></center></td>
+ </tr>
+ <tr>
+  <td><center>Tropical Depression</center></td><td><center>< 39</center></td><td><center>Minimal</center></td><td><center><u><b>N/A</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/trop_depression.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>Tropical Storm</center></td><td><center>39-74</center></td><td><center>< 4</center></td><td><center><u><b>> 990</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/trop_storm.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>1</center></td><td><center>74-95</center></td><td><center>4-5</center></td><td><center><u><b>> 980</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/cat1_ana.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>2</center></td><td><center>96-110</center></td><td><center>6-8</center></td><td><center><u><b>965-979</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/cat2_isabel.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>3</center></td><td><center>111-130</center></td><td><center>9-12</center></td><td><center><u><b>945-964</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/cat3_bill.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+  <tr>
+  <td><center>4</center></td><td><center>131-155</center></td><td><center>13-18</center></td><td><center><u><b>920-944</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/cat4_harvey.png" style="width:300px;height:200px;"></center></td>
+ </tr>
+   <tr>
+  <td><center>5</center></td><td><center>> 155</center></td><td><center>> 18</center></td><td><center><u><b>< 920</b></u></center></td><td><center><img src="https://andrewswxcenter.com/images/cat5_irma.jpg" style="width:300px;height:200px;"></center></td>
+ </tr>
+</table>
+
+
+</body>
+</html>
