@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+</head>
+
+<body>
+
+
+
+<table align="center" class="beaufort">
+<caption style="font-weight:bold; font-size:17px";>THE BEAUFORT SCALE:<br></caption>
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>Force</u></center></td><td bgcolor="#DFDFDF"><center><u>Wind<br>[Knots]</u></center></td><td bgcolor="#DFDFDF"><center><u>Wind<br>[mph]</u></center></td><td bgcolor="#DFDFDF"><center><u>WMO Classification</u></center></td><td bgcolor="#DFDFDF"><center><u>Effect on Land</u></center></td><td bgcolor="#DFDFDF"><center><u>Effect on Water</u></center></td>
+ </tr>
+ <tr>
+  <td><center>0</center></td><td><center>< 1</center></td><td><center>< 1</center></td><td><center>Calm</center></td><td><center>Smoke rises vertically</center></td><td><center>Sea surface smooth and mirror-like</center></td>
+ </tr>
+ <tr>
+  <td><center>1</center></td><td><center>1-3</center></td><td><center>1-3</center></td><td><center>Light Air</center></td><td><center>Smoke drift indicates wind direction;<br>wind vanes still</center></td><td><center>Scaly ripples; No foam crests</center></td>
+ </tr>
+<tr>
+  <td><center>2</center></td><td><center>4-6</center></td><td><center>4-7</center></td><td><center>Light Breeze</center></td><td><center>Wind felt on face; Leaves rustle;<br>Weather vanes being to move</center></td><td><center>Small wavelets; Crests glassy;<br>No breaking</center></td>
+ </tr>
+<tr>
+  <td><center>3</center></td><td><center>7-10</center></td><td><center>8-12</center></td><td><center>Gentle Breeze</center></td><td><center>Leaves and small twigs constantly moving;<br>Light flags extended</center></td><td><center>Large wavelets; crests begin to break;<br>Scattered whitecaps</center></td>
+ </tr>
+<tr>
+  <td><center>4</center></td><td><center>11-16</center></td><td><center>13-18</center></td><td><center>Moderate Breeze</center></td><td><center>Dust, leaves, and loose paper lifted;<br>Small tree branches move</center></td><td><center>Small waves 1-4 ft. becoming longer;<br>Numerous whitecaps</center></td>
+ </tr>
+<tr>
+  <td><center>5</center></td><td><center>17-21</center></td><td><center>19-24</center></td><td><center>Fresh Breeze</center></td><td><center>Small trees in leaf begin to sway</center></td><td><center>Moderate waves 4-8 ft taking longer form;<br>Many whitecaps; Some spray</center></td>
+ </tr>
+<tr>
+  <td><center>6</center></td><td><center>22-27</center></td><td><center>25-31</center></td><td><center>Strong Breeze</center></td><td><center>Larger tree branches moving;<br>Whistling in wires</center></td><td><center>Larger waves 8-13 ft;<br>Whitecaps common; More spray</center></td>
+ </tr>
+<tr>
+  <td><center>7</center></td><td><center>28-33</center></td><td><center>32-38</center></td><td><center>Near Gale</center></td><td><center>Whole trees moving;<br>Resistance felt walking against wind</center></td><td><center>Sea heaps up, waves 13-19 ft;<br>White foam streaks off breakers</center></td>
+ </tr>
+<tr>
+  <td><center>8</center></td><td><center>34-40</center></td><td><center>39-46</center></td><td><center>Gale</center></td><td><center>Twigs breaking off trees;<br>Generally impedes forward progress</center></td><td><center> Moderately high (18-25 ft) waves of greater length;<br>Edges of crests begin to break into spindrift;<br>Foam blown in streaks</center></td>
+ </tr>
+<tr>
+  <td><center>9</center></td><td><center>41-47</center></td><td><center>47-54</center></td><td><center>Strong Gale</center></td><td><center>Slight structural damage occurs;<br>Slate (shingles) blow off roofs</center></td><td><center>High waves (23-32 ft), sea begins to roll;<br>Dense streaks of foam;<br>Spray may reduce visibility</center></td>
+ </tr>
+<tr>
+  <td><center>10</center></td><td><center>48-55</center></td><td><center>55-63</center></td><td><center>Storm</center></td><td><center>Seldom experienced on land;<br>Trees broken or uprooted, "considerable structural damage"</center></td><td><center>Very high waves (29-41 ft) with overhanging crests;<br>Sea white with densely blown foam;<br>Heavy rolling, lowered visibility</center></td>
+ </tr>
+<tr>
+  <td><center>11</center></td><td><center>56-63</center></td><td><center>64-72</center></td><td><center>Violent Storm</center></td><td><center>Very rarely experienced;<br>Accompanied by widespread damage.</center></td><td><center>Exceptionally high (37-52 ft) waves;<br>Foam patches cover sea, visibility more reduced</center></td>
+ </tr>
+<tr>
+  <td><center>12</center></td><td><center>64+</center></td><td><center>73+</center></td><td><center>Hurricane</center></td><td><center>Devastation</center></td><td><center>Air filled with foam, waves over 45 ft;<br>Sea completely white with driving spray;<br>Visibility greatly reduced</center></td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
