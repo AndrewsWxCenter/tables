@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +11,10 @@
 
 
 
+<div style="float: left; width: 49%;">
 
 
-<table align="center" class="aqgreentable">
+<table class="aqgreentable">
  <tr>
  <td bgcolor="#DFDFDF"><center><u>Color Code<br>& Range</u></center></td><td bgcolor="#DFDFDF"><center><u>Category & Description</u></center></td><td bgcolor="#DFDFDF"><center><u>Precautions<br>& Tips</u></center></td>
  </tr>
@@ -23,40 +23,71 @@
  </tr>
 </table>
 
-<table align="center" class="aqyellowtable">
+<table class="aqyellowtable">
  <tr>
   <td width="25%"><center>Code Yellow<br>51-100</center></td><td width="50%"><center>Moderate - Air quality becomes a concern for people with extra sensitivity to air pollution</center></td><td><center>People who are extra sensitive to air pollution should reschedule outdoor activities to when air quality improves</center></td>
  </tr>
 </table>
 
-<table align="center" class="aqorangetable">
+<table class="aqorangetable">
  <tr>
   <td width="25%"><center>Code Orange<br>101-150</center></td><td width="50%"><center>Unhealthy for Sensitive Groups - Air quality is unhealthy for many people, especially those with lung disease, asthma, older adults, and children</center></td><td><center>Sensitive groups should cut back or reschedule strenuous outdoor activities</center></td>
  </tr>
 </table>
 
-<table align="center" class="aqredtable">
+<table class="aqredtable">
  <tr>
   <td width="25%"><center>Code Red<br>151-200</center></td><td width="50%"><center>Unhealthy - Air quality is unhealthy for everyone, especially those with heart or lung disease</center></td><td><center>Everyone should avoid strenuous outdoor activities</center></td>
  </tr>
 </table>
 
-<table align="center" class="aqpurpletable">
+<table class="aqpurpletable">
  <tr>
   <td width="25%"><center>Code Purple<br>201-300</center></td><td width="50%"><center>Very Unhealthy - Air quality is unhealthy for everyone, especially those with heart or lung disease</center></td><td><center>Everyone should avoid any physical outdoor activities</center></td>
  </tr>
 </table>
 
-<table align="center" class="aqhazardtable">
+<table class="aqhazardtable">
  <tr>
   <td width="25%"><center>Code Maroon<br>301-500</center></td><td width="50%"><center>Hazardous - Air quality is hazardous for everyone</center></td><td><center>Everyone should avoid any outdoor activities at all costs</center></td>
  </tr>
 </table>
 
+</div>
 
 
 
 
+
+
+
+
+
+
+<div style="float: right; width: 49%;">
+
+<table align="center" class="uvlowtable">
+ <tr>
+ <td bgcolor="#DFDFDF"><center><u>UV Index Values</u></center></td><td bgcolor="#DFDFDF"><center><u>Description</u></center></td><td bgcolor="#DFDFDF"><center><u>Protection Level</u></center></td>
+ </tr>
+ <tr>
+  <td width="25%"><center>1,2</center></td><td width="50%"><center>Low - You can safely stay outside without the risk of sunburn</center></td><td><center>No skin protection required</center></td>
+ </tr>
+</table>
+
+<table align="center" class="uvmidtable">
+ <tr>
+  <td width="25%"><center>3,4,5,6,7</center></td><td width="50%"><center>Medium - Seek shade during midday hours (1:00-4:00 PM) - Sunscreen and hat recommended</center></td><td><center>Skin protection required if prolonged exposure outdoors</center></td>
+ </tr>
+</table>
+
+<table align="center" class="uvhitable">
+ <tr>
+  <td width="25%"><center>8,9,10,11+</center></td><td width="50%"><center>High to Extreme - Avoid being outdoors during midday hours (1:00-4:00 PM) - Sunscreen required, hat strongly recommended</center></td><td><center><b>Extra</b> skin protection required</center></td>
+ </tr>
+</table>
+
+</div>
 
 </body>
 </html>
