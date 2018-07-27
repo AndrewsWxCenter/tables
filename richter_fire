@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+</head>
+
+<body>
+
+
+
+<div style="float: left; width: 49%;">
+
+<table class="richter">
+<thead>
+<tr>
+<td>Magnitude</td>
+<td>Damage</td>
+<td>Frequency/Description</td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&lt; 2.0</td>
+<td>Mirco</td>
+<td>~8,000 per day/Not perceivable</td>
+</tr>
+<tr>
+<td>2.0-2.9</td>
+<td>Minor</td>
+<td>~1,000 per day/Generally not perceivable, but recorded</td>
+</tr>
+<tr>
+<td>3.0-3.9</td>
+<td>Minor</td>
+<td>~49,000 per year/Often felt, but cause no damage</td>
+</tr>
+<tr>
+<td>4.0-4.9</td>
+<td>Light</td>
+<td>~6,200 per year/Noticeable shaking of indoor items; significant damage unlikely</td>
+</tr>
+<tr>
+<td>5.0-5.9</td>
+<td>Moderate</td>
+<td>~800 per year/Can cause major damage to poorly constructed buildings over small regions; Slight damage possible to well-designed buildings</td>
+</tr>
+<tr>
+<td>6.0-6.9</td>
+<td>Strong</td>
+<td>~120 per year/Can be destructive in areas up to about 100 miles across in populated areas</td>
+</tr>
+<tr>
+<td>7.0-7.9</td>
+<td>Major</td>
+<td>~18 per year/Can cause serious damage over large areas</td>
+</tr>
+<tr>
+<td>8.0-8.9</td>
+<td>Massive</td>
+<td>~1 per year/Can cause severe damage in areas hundreds of miles across</td>
+</tr>
+<tr>
+<td>9.0-9.9</td>
+<td>Catastro-phic</td>
+<td>~1 per year/Devastating and catastrophic damage in areas several thousand miles across</td>
+</tr>
+<tr>
+<td>10.0+</td>
+<td>Incredible (Unkown)</td>
+<td>Never recorded/Widespread damage across very large areas (Unknown)</td>
+</tr>
+</tbody></table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div style="float: right; width: 49%;">
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
