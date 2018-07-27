@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+</head>
+
+<body>
+
+
+
+<div style="float: left; width: 49%;">
+
+<table class="bortle">
+
+<thead>
+<tr>
+<tr>Bortle Class</tr>
+<tr>Color Key/Magnitude</tr>
+<tr>Sky Description</tr>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1</td>
+<td>Black / 7.6-8.0</td>
+<td>Excellent, naturally dark skies</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Gray / 7.1-7.5</td>
+<td>Typical, truly dark skies - the Milky Way is clearly visible</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Blue / 6.6-7.0</td>
+<td>Rural sky - Weak glow at the horizon above distant towns</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Green / 6.1-6.5</td>
+<td>Rural/Suburban transition - Negative effect on stargazing</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Yellow / 5.6-6.0</td>
+<td>Suburban sky - Strong negative effect on stargazing</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Orange / 5.1-5.5</td>
+<td>Bright Suburban sky - Milky Way is invisible</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Red / 4.6-5.0</td>
+<td>Suburban/Urban transition - Less than 100 stars visible to the naked eye</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>White / 4.1-4.5</td>
+<td>City sky - Less than 20 stars visible to the naked eye</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>White / 4.0 at best</td>
+<td>Inner City sky - Entire night sky has a bright glow, only the brightest constellations are discernable</td>
+</tr>
+</tbody></table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div style="float: right; width: 49%;">
+
+<table class="cme">
+<thead>
+<tr>
+<tr>Classification</tr>
+<tr>Peak Flux [W/m^2]</tr>
+<tr>Percentage of Annual Flares (2013 Data)</tr>
+<tr>Earth Impacts</tr>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>X</td>
+<td>I &gt;= 10^-4</td>
+<td>0.34%</td>
+<td>The most intense solar flares; ten times as intense as M-class flares; capable of causing planet-wide radio blackouts and radiation storms.</td>
+</tr>
+<tr>
+<td>M</td>
+<td>10^-5 &lt; I &lt; 10^-4</td>
+<td>2.66%</td>
+<td>Ten times as intense as C-class flares; medium-sized flares capable of causing brief radio blackouts or interference. Occasionally causes subsequent geomagnetic storms.</td>
+</tr>
+<tr>
+<td>C</td>
+<td>10^-6 &lt; I &lt; 10^-5</td>
+<td>59.23%</td>
+<td>The most frequent flare classification - ten times as intense as B-class flares; these flares are relatively small with few noticeable consequences on Earth.</td>
+</tr>
+<tr>
+<td>B</td>
+<td>I &lt; 10^-6</td>
+<td>37.77%</td>
+<td>These and A-class flares are generally regarded as near-background levels.</td>
+</tr>
+</tbody></table>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
