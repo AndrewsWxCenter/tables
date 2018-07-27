@@ -17,9 +17,9 @@
 
 <thead>
 <tr>
-<tr>Bortle Class</tr>
-<tr>Color Key/Magnitude</tr>
-<tr>Sky Description</tr>
+<td>Bortle Class</td>
+<td>Color Key/Magnitude</td>
+<td>Sky Description</td>
 </tr>
 </thead>
 
@@ -87,10 +87,10 @@
 <table class="cme">
 <thead>
 <tr>
-<tr>Classification</tr>
-<tr>Peak Flux [W/m^2]</tr>
-<tr>Percentage of Annual Flares (2013 Data)</tr>
-<tr>Earth Impacts</tr>
+<td>Classification</td>
+<td>Peak Flux [W/m^2]</td>
+<td>Percentage of Annual Flares (2013 Data)</td>
+<td>Earth Impacts</td>
 </tr>
 </thead>
 
