@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+    </head>
+    
+    <body>
+<div style="float: left; width: 49%;">
+
+<table class="aq">
+<caption style="font-weight:bold; font-size:17px";>AIR QUALITY INDEX:<br></caption>
+<tr>
+<td width="18%" bgcolor="#DFDFDF"><center><u>Color Code & Range</u></center></td><td width="41%" bgcolor="#DFDFDF"><center><u>Category & Description</u></center></td><td width="41%" bgcolor="#DFDFDF"><center><u>Precautions & Tips</u></center></td>
+</tr>
+
+<tr>
+<td>Code Green<br>0-50</td>
+<td>Good - Air quality is good</td>
+<td>None</td>
+</tr>
+
+<tr>
+<td>Code Yellow<br>51-100</td>
+<td>Moderate - Air quality becomes a concern for people with extra sensitivity to air pollution</td>
+<td>People who are extra sensitive to air pollution should reschedule outdoor activities to when air quality improves</td>
+</tr>
+
+<tr>
+<td>Code Orange<br>101-150</td>
+<td>Unhealthy for Sensitive Groups - Air quality is unhealthy for many people, especially those with lung disease, asthma, older adults, and children</td>
+<td>Sensitive groups should cut back or reschedule strenuous outdoor activities</td>
+</tr>
+
+<tr>
+<td>Code Red<br>151-200</td>
+<td>Unhealthy - Air quality is unhealthy for everyone, especially those with heart or lung disease</td>
+<td>Everyone should avoid strenuous outdoor activities</td>
+</tr>
+
+<tr>
+<td>Code Purple<br>201-300</td>
+<td>Very Unhealthy - Air quality is unhealthy for everyone, especially those with heart or lung disease</td>
+<td>Everyone should avoid ANY physical outdoor activities</td>
+</tr>
+
+<tr>
+<td>Code Purple<br>301-500</td>
+<td>Hazardous - Air quality is hazardous for everyone</td>
+<td>Everyone should avoid any outdoor activities at all costs</td>
+</tr>
+</table>
+
+</div>
+
+<div style="float: right; width: 49%;">
+<caption style="font-weight:bold; font-size:17px";>UV INDEX:<br></caption>
+<table align="center" class="uv">
+<tr>
+<td width="25%" bgcolor="#DFDFDF"><center><u>UV Index Values</u></center></td><td width="50%" bgcolor="#DFDFDF"><center><u>Description</u></center></td><td width="25%" bgcolor="#DFDFDF"><center><u>Protection Level</u></center></td>
+</tr>
+
+<tr>
+<td>1,2</td>
+<td>Low - You can safely stay outside without the risk of sunburn</td>
+<td>No skin protection required</td>
+</tr>
+
+<tr>
+<td>3,4,5,6,7</td>
+<td>Medium - Seek shade during midday hours (1:00-4:00 PM) - Sunscreen and hat recommended</td>
+<td>Skin protection required if prolonged exposure outdoors</td>
+</tr>
+
+<tr>
+<td>8,9,10,11+</td>
+<td>High to Extreme - Avoid being outdoors during midday hours (1:00-4:00 PM) - Sunscreen required, hat strongly recommended</td>
+<td><b>Extra</b> skin protection required</td>
+</tr>
+</table>
+</div>
+    </body>
+</html>
