@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+    </head>
+
+    <body>
+<table align="center" class="spia">
+<caption style="font-weight:bold; font-size:17px";>THE SPERRY-PLITZ ICE ACCUMULATION INDEX:<br></caption>
+<tr>
+<td width="10%" bgcolor="#DFDFDF"><center><b><u>Ice Damage Index</u></b></center></td><td width="15%" bgcolor="#DFDFDF"><center><b><u>Average Ice Accretion [inches]</u></b></center></td><td width="15%" bgcolor="#DFDFDF"><center><b><u>Wind [mph]</u></b></center></td><td width="60%" bgcolor="#DFDFDF"><center><b><u>Damage & Impact Descriptions</u></b></center></td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>&lt; 0.25</td>
+<td>&lt; 15</td>
+<td>Minimal risk of damage to exposed utility systems; no alerts or advisories needed for crew; few outages.</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0.10-0.25<br>0.25-0.50</td>
+<td>15-25<br>&gt; 15</td>
+<td>Some isolated or localized utility interruptions are possible, typically lasting only a few hours. Roads and bridges may become slick and hazardous.</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>0.10-0.25<br>0.25-0.50<br>0.50-0.75</td>
+<td>25-35<br>15-25<br>&gt; 15</td>
+<td>Scattered utility interruptions expected, typically lasting 12 to 24 hours. Roads and travel conditions may be extremely hazardous due to ice accumulation.</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>0.10-0.25<br>0.25-0.50<br>0.50-0.75<br>0.75-1.00</td>
+<td>&gt; 35<br>25-35<br>15-25<br>&gt; 15</td>
+<td>Numerous utility interruptions with some damage to main feeder lines and equipment expected. Tree limb damage is excessive. Outages lasting 1-5 days.</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>0.25-0.50<br>0.50-0.75<br>0.75-1.00<br>1.00-1.50</td>
+<td>&gt; 35<br>25-35<br>15-25<br>&gt; 15</td>
+<td>Prolonged and widespread utility interruptions with extensive damage to main distribution feeder lines and some high voltage transmission lines/structures. Outages lasting 5-10 days.</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>0.50-0.75<br>0.75-1.00<br>1.00-1.50<br>&gt; 1.50</td>
+<td>&gt; 35<br>&gt; 25<br>&gt; 15<br>Any</td>
+<td>Catastrophic damage to entire exposed utility systems, including both distribution and transmission networks. Outages could last several weeks in some areas. Shelters needed.</td>
+</tr>
+</table>
+    </body>
+</html>
