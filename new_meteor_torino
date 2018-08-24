@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+    </head>
+    
+    <body>
+<table class="meteors">
+<caption style="font-weight:bold; font-size:17px";>ANNUAL METEOR SHOWERS:<br></caption>
+<thead>
+<tr>
+<td width="20%" bgcolor="#DFDFDF"><b><u>Meteor Shower Name</u></b></td>
+<td width="20%" bgcolor="#DFDFDF"><b><u>Pronunciation</u></b></td>
+<td width="20%" bgcolor="#DFDFDF"><b><u>Peak Nights</u></b></td>
+<td width="20%" bgcolor="#DFDFDF"><b><u>Mean Meteor Velocity</u></b></td>
+<td width="20%" bgcolor="#DFDFDF"><b><u>Best Viewed From</u></b></td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Quadrantids</td>
+<td>[kwa-DRAN-tids]</td>
+<td>January 3-4</td>
+<td>26 miles/sec [medium]</td>
+<td>Northern Hemisphere</td>
+</tr>
+<tr>
+<td>Lyrids</td>
+<td>[LIE-rids]</td>
+<td>April 22-23</td>
+<td>30 miles/sec [medium]</td>
+<td>Northern Hemisphere</td>
+</tr>
+<tr>
+<td>Eta Aquariids</td>
+<td>[EIGHT-a ACK-wah-rids]</td>
+<td>May 6-7</td>
+<td>42 miles/sec [swift]</td>
+<td>Southern Hemisphere</td>
+</tr>
+<tr>
+<td>Alpha Capricornids</td>
+<td>[AL-fa CAP-rih-CORN-ids]</td>
+<td>July 27-28</td>
+<td>15 miles/sec [slow]</td>
+<td>Everywhere</td>
+</tr>
+<tr>
+<td>Delta Aquariids</td>
+<td>[DEL-ta ACK-wah-rids]</td>
+<td>July 28-29</td>
+<td>26 miles/sec [medium]</td>
+<td>Southern Hemisphere/Tropics</td>
+</tr>
+<tr>
+<td>Perseids</td>
+<td>[PURR-see-ids] NOT &quot;Per-sade&quot;</td>
+<td>August 12-13</td>
+<td>37 miles/sec [swift]</td>
+<td>Northern Hemisphere</td>
+</tr>
+<tr>
+<td>Orionids</td>
+<td>[o-RYAN-ids]</td>
+<td>October 21-22</td>
+<td>41 miles/sec [swift]</td>
+<td>Everywhere</td>
+</tr>
+<tr>
+<td>Southern Taurids</td>
+<td>[southern TORR-ids]</td>
+<td>October 23-24</td>
+<td>17 miles/sec [slow]</td>
+<td>Southern Hemisphere</td>
+</tr>
+<tr>
+<td>Northern Taurids</td>
+<td>[northern TORR-ids]</td>
+<td>November 11-12</td>
+<td>18 miles/sec [medium]</td>
+<td>Northern Hemisphere</td>
+</tr>
+<tr>
+<td>Leonids</td>
+<td>[LEO-nids]</td>
+<td>November 17-18</td>
+<td>44 miles/sec [swift]</td>
+<td>Everywhere</td>
+</tr>
+<tr>
+<td>Geminids</td>
+<td>[JIM-o-nids]</td>
+<td>December 13-14</td>
+<td>22 miles/sec [medium]</td>
+<td>Northern Hemisphere</td>
+</tr>
+<tr>
+<td>Ursids</td>
+<td>[ER-sids]</td>
+<td>December 21-22</td>
+<td>20 miles/sec [medium]</td>
+<td>Northern Hemisphere Only</td>
+</tr>
+</tbody></table>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<table align="center" class="torino">
+<caption style="font-weight:bold; font-size:17px";>TORINO SCALE OF ASSESSING ASTEROID/COMET IMPACTS:<br></caption>
+<tr>
+<td width="20%" bgcolor="#DFDFDF"><b><u>Hazard Level & Color Zone</u></b></center></td><td  width="20%" bgcolor="#DFDFDF"><center><b><u>Category Number</u></b></center></td><td width="60%" bgcolor="#DFDFDF"><center><b><u>Description</u></b></center></td>
+</tr>
+<tr>
+<td>No Hazard (White Zone)</td>
+<td>0</td>
+<td>The likelihood of a collision is zero, or is so low as to be effectively zero. Also applies to small objects such as meteors and bodies that burn up in the atmosphere as well as infrequent meteorite falls that rarely cause damage.</td>
+</tr>
+<tr>
+<td>Normal (Green Zone)</td>
+<td>1</td>
+<td>A routine discovery in which a pass near the Earth is predicted that poses no unusual level of danger. Current calculations show the chance of collision is extremely unlikely with no cause for public attention or public concern. New telescopic observations very likely will lead to re-assignment to Level 0.</td>
+</tr>
+<tr>
+<td>Meriting Attention by Astronomers (Yellow Zone)</td>
+<td>2</td>
+<td>A discovery, which may become routine with expanded searches, of an object making a somewhat close but not highly unusual pass near the Earth. While meriting attention by astronomers, there is no cause for public attention or public concern as an actual collision is very unlikely. New telescopic observations very likely will lead to re-assignment to Level 0.</td>
+</tr> 
+<tr>
+<td>Meriting Attention by Astronomers (Yellow Zone)</td>
+<td>3</td>
+<td>A close encounter, meriting attention by astronomers. Current calculations give a 1% or greater chance of collision capable of localized destruction. Most likely, new telescopic observations will lead to re-assignment to Level 0. Attention by public and by public officials is merited if the encounter is less than a decade away.</td>
+</tr> 
+<tr>
+<td>Meriting Attention by Astronomers (Yellow Zone)</td>
+<td>4</td>
+<td>A close encounter, meriting attention by astronomers. Current calculations give a 1% or greater chance of collision capable of regional devastation. Most likely, new telescopic observations will lead to re-assignment to Level 0. Attention by public and by public officials is merited if the encounter is less than a decade away.</td>
+</tr> 
+<tr>
+<td>Threatening (Orange Zone)</td>
+<td>5</td>
+<td>A close encounter posing a serious, but still uncertain threat of regional devastation. Critical attention by astronomers is needed to determine conclusively whether or not a collision will occur. If the encounter is less than a decade away, governmental contingency planning may be warranted.</td>
+</tr> 
+<tr>
+<td>Threatening (Orange Zone)</td>
+<td>6</td>
+<td>A close encounter by a large object posing a serious but still uncertain threat of a global catastrophe. Critical attention by astronomers is needed to determine conclusively whether or not a collision will occur. If the encounter is less than three decades away, governmental contingency planning may be warranted.</td>
+</tr> 
+<tr>
+<td>Threatening (Orange Zone)</td>
+<td>7</td>
+<td>A very close encounter by a large object, which if occurring this century, poses an unprecedented but still uncertain threat of a global catastrophe. For such a threat in this century, international contingency planning is warranted, especially to determine urgently and conclusively whether or not a collision will occur.</td>
+</tr> 
+<tr>
+<td>Certain Collisions (Red Zone)</td>
+<td>8</td>
+<td>A collision is certain, capable of causing localized destruction for an impact over land or possibly a tsunami if close offshore. Such events occur on average between once per 50 years and once per several 1000 years.</td>
+</tr> 
+<tr>
+<td>Certain Collisions (Red Zone)</td>
+<td>9</td>
+<td>A collision is certain, capable of causing unprecedented regional devastation for a land impact or the threat of a major tsunami for an ocean impact. Such events occur on average between once per 10,000 years and once per 100,000 years.</td>
+</tr> 
+<tr>
+<td>Certain Collisions (Red Zone)</td>
+<td>10</td>
+<td>A collision is certain, capable of causing global climatic catastrophe that may threaten the future of civilization as we know it, whether impacting land or ocean. Such events occur on average once per 100,000 years, or less often.</td>
+</tr> 
+</table>
+    </body>
+</html>
