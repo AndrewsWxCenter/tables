@@ -11,7 +11,7 @@
 <table class="aq">
 <caption style="font-weight:bold; font-size:17px";>AIR QUALITY INDEX:<br></caption>
 <tr>
-<td width="18%" bgcolor="#DFDFDF"><center><u>Color Code & Range</u></center></td><td width="41%" bgcolor="#DFDFDF"><center><u>Category & Description</u></center></td><td width="41%" bgcolor="#DFDFDF"><center><u>Precautions & Tips</u></center></td>
+<td width="18%" bgcolor="#DFDFDF"><center><b><u>Color Code & Range</u></b></center></td><td width="41%" bgcolor="#DFDFDF"><center><b><u>Category & Description</u></b></center></td><td width="41%" bgcolor="#DFDFDF"><center><b><u>Precautions & Tips</u></b></center></td>
 </tr>
 
 <tr>
@@ -45,7 +45,7 @@
 </tr>
 
 <tr>
-<td>Code Purple<br>301-500</td>
+<td>Code Maroon<br>301-500</td>
 <td>Hazardous - Air quality is hazardous for everyone</td>
 <td>Everyone should avoid any outdoor activities at all costs</td>
 </tr>
@@ -54,10 +54,11 @@
 </div>
 
 <div style="float: right; width: 49%;">
-<caption style="font-weight:bold; font-size:17px";>UV INDEX:<br></caption>
+
 <table align="center" class="uv">
+<caption style="font-weight:bold; font-size:17px";>UV INDEX:<br></caption>
 <tr>
-<td width="25%" bgcolor="#DFDFDF"><center><u>UV Index Values</u></center></td><td width="50%" bgcolor="#DFDFDF"><center><u>Description</u></center></td><td width="25%" bgcolor="#DFDFDF"><center><u>Protection Level</u></center></td>
+<td width="18%" bgcolor="#DFDFDF"><center><b><u>UV Index Values</u></b></center></td><td width="41%" bgcolor="#DFDFDF"><center><b><u>Description</u></b></center></td><td width="41%" bgcolor="#DFDFDF"><center><b><u>Protection Level</u></b></center></td>
 </tr>
 
 <tr>
