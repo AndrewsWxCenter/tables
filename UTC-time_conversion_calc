@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function tempConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputUTC = document.getElementById("inputUTC");
+  var inputAST = document.getElementById("inputAST");
+  var inputEST = document.getElementById("inputEST");
+  var inputCST = document.getElementById("inputCST");
+  var inputMST = document.getElementById("inputMST");
+  var inputPST = document.getElementById("inputPST");
+  var inputKST = document.getElementById("inputKST");
+  var inputHST = document.getElementById("inputHST");
+
+  if (source=="inputUTC") {
+    inputAST.value=(valNum-4).toFixed(2);
+    inputEST.value=(valNum-5).toFixed(2);
+    inputCST.value=(valNum-6).toFixed(2);
+    inputMST.value=(valNum-7).toFixed(2);
+    inputPST.value=(valNum-8).toFixed(2);
+    inputKST.value=(valNum-9).toFixed(2);
+    inputHST.value=(valNum-10).toFixed(2);
+
+  }
+  if (source=="inputAST") {
+    inputUTC.value=(valNum+4).toFixed(2);
+    inputEST.value=(valNum-1).toFixed(2);
+    inputCST.value=(valNum-2).toFixed(2);
+    inputMST.value=(valNum-3).toFixed(2);
+    inputPST.value=(valNum-4).toFixed(2);
+    inputKST.value=(valNum-5).toFixed(2);
+    inputHST.value=(valNum-6).toFixed(2);
+
+  }
+    if (source=="inputEST") {
+    inputUTC.value=(valNum+5).toFixed(2);
+    inputAST.value=(valNum+1).toFixed(2);
+    inputCST.value=(valNum-1).toFixed(2);
+    inputMST.value=(valNum-2).toFixed(2);
+    inputPST.value=(valNum-3).toFixed(2);
+    inputKST.value=(valNum-4).toFixed(2);
+    inputHST.value=(valNum-5).toFixed(2);
+
+  }
+  
+   }
+    if (source=="inputCST") {
+    inputUTC.value=(valNum+6).toFixed(2);
+    inputAST.value=(valNum+2).toFixed(2);
+    inputEST.value=(valNum+1).toFixed(2);
+    inputMST.value=(valNum-1).toFixed(2);
+    inputPST.value=(valNum-2).toFixed(2);
+    inputKST.value=(valNum-3).toFixed(2);
+    inputHST.value=(valNum-4).toFixed(2);
+
+  }
+    }
+    if (source=="inputMST") {
+    inputUTC.value=(valNum+7).toFixed(2);
+    inputAST.value=(valNum+3).toFixed(2);
+    inputEST.value=(valNum+2).toFixed(2);
+    inputCST.value=(valNum+1).toFixed(2);
+    inputPST.value=(valNum-1).toFixed(2);
+    inputKST.value=(valNum-2).toFixed(2);
+    inputHST.value=(valNum-3).toFixed(2);
+
+  }
+     }
+    if (source=="inputPST") {
+    inputUTC.value=(valNum+8).toFixed(2);
+    inputAST.value=(valNum+4).toFixed(2);
+    inputEST.value=(valNum+3).toFixed(2);
+    inputCST.value=(valNum+2).toFixed(2);
+    inputMST.value=(valNum+1).toFixed(2);
+    inputKST.value=(valNum-1).toFixed(2);
+    inputHST.value=(valNum-2).toFixed(2);
+
+  }
+    }
+    if (source=="inputKST") {
+    inputUTC.value=(valNum+9).toFixed(2);
+    inputAST.value=(valNum+5).toFixed(2);
+    inputEST.value=(valNum+4).toFixed(2);
+    inputCST.value=(valNum+3).toFixed(2);
+    inputMST.value=(valNum+2).toFixed(2);
+    inputPST.value=(valNum+1).toFixed(2);
+    inputHST.value=(valNum-1).toFixed(2);
+
+  }
+      }
+    if (source=="inputHST") {
+    inputUTC.value=(valNum+10).toFixed(2);
+    inputAST.value=(valNum+6).toFixed(2);
+    inputEST.value=(valNum+5).toFixed(2);
+    inputCST.value=(valNum+4).toFixed(2);
+    inputMST.value=(valNum+3).toFixed(2);
+    inputPST.value=(valNum+2).toFixed(2);
+    inputKST.value=(valNum+1).toFixed(2);
+
+  }
+  
+  
+  
+}
+
+</script>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+<input id="inputUTC" type="number" placeholder="Enter in UTC/Z" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;UTC/Z</label>
+
+<br>
+
+<input id="inputAST" type="number" placeholder="Enter in AST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;AST</label>
+
+<br>
+
+<input id="inputEST" type="number" placeholder="Enter in EST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;EST</label>
+
+<br>
+
+<input id="inputCST" type="number" placeholder="Enter in CST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;CST</label>
+
+<br>
+
+<input id="inputMST" type="number" placeholder="Enter in MST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;MST</label>
+
+<br>
+
+<input id="inputPST" type="number" placeholder="Enter in PST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;PST</label>
+
+<br>
+
+<input id="inputKST" type="number" placeholder="Enter in KST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;KST</label>
+
+<br>
+
+<input id="inputHST" type="number" placeholder="Enter in HST" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;HST</label>
+
+<br>
+
+
+
+</body>
+</html>
