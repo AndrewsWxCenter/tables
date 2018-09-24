@@ -17,14 +17,13 @@ function tempConverter(source,valNum) {
   var inputHST = document.getElementById("inputHST");
 
   if (source=="inputUTC") {
-    inputAST.value=(valNum-4).toFixed(2);
-    inputEST.value=(valNum-5).toFixed(2);
-    inputCST.value=(valNum-6).toFixed(2);
-    inputMST.value=(valNum-7).toFixed(2);
-    inputPST.value=(valNum-8).toFixed(2);
-    inputKST.value=(valNum-9).toFixed(2);
-    inputHST.value=(valNum-10).toFixed(2);
-
+    inputAST.value=(valNum/96*4).toFixed(0);
+    inputEST.value=(valNum-5).toFixed(0);
+    inputCST.value=(valNum-6).toFixed(0);
+    inputMST.value=(valNum-7).toFixed(0);
+    inputPST.value=(valNum-8).toFixed(0);
+    inputKST.value=(valNum-9).toFixed(0);
+    inputHST.value=(valNum-10).toFixed(0);
   }
   if (source=="inputAST") {
     inputUTC.value=(valNum+4).toFixed(2);
@@ -36,7 +35,7 @@ function tempConverter(source,valNum) {
     inputHST.value=(valNum-6).toFixed(2);
 
   }
-    if (source=="inputEST") {
+  if (source=="inputEST") {
     inputUTC.value=(valNum+5).toFixed(2);
     inputAST.value=(valNum+1).toFixed(2);
     inputCST.value=(valNum-1).toFixed(2);
@@ -44,11 +43,8 @@ function tempConverter(source,valNum) {
     inputPST.value=(valNum-3).toFixed(2);
     inputKST.value=(valNum-4).toFixed(2);
     inputHST.value=(valNum-5).toFixed(2);
-
   }
-  
-   }
-    if (source=="inputCST") {
+  if (source=="inputCST") {
     inputUTC.value=(valNum+6).toFixed(2);
     inputAST.value=(valNum+2).toFixed(2);
     inputEST.value=(valNum+1).toFixed(2);
@@ -56,10 +52,8 @@ function tempConverter(source,valNum) {
     inputPST.value=(valNum-2).toFixed(2);
     inputKST.value=(valNum-3).toFixed(2);
     inputHST.value=(valNum-4).toFixed(2);
-
   }
-    }
-    if (source=="inputMST") {
+  if (source=="inputMST") {
     inputUTC.value=(valNum+7).toFixed(2);
     inputAST.value=(valNum+3).toFixed(2);
     inputEST.value=(valNum+2).toFixed(2);
@@ -67,10 +61,8 @@ function tempConverter(source,valNum) {
     inputPST.value=(valNum-1).toFixed(2);
     inputKST.value=(valNum-2).toFixed(2);
     inputHST.value=(valNum-3).toFixed(2);
-
   }
-     }
-    if (source=="inputPST") {
+  if (source=="inputPST") {
     inputUTC.value=(valNum+8).toFixed(2);
     inputAST.value=(valNum+4).toFixed(2);
     inputEST.value=(valNum+3).toFixed(2);
@@ -78,10 +70,8 @@ function tempConverter(source,valNum) {
     inputMST.value=(valNum+1).toFixed(2);
     inputKST.value=(valNum-1).toFixed(2);
     inputHST.value=(valNum-2).toFixed(2);
-
   }
-    }
-    if (source=="inputKST") {
+  if (source=="inputKST") {
     inputUTC.value=(valNum+9).toFixed(2);
     inputAST.value=(valNum+5).toFixed(2);
     inputEST.value=(valNum+4).toFixed(2);
@@ -89,10 +79,8 @@ function tempConverter(source,valNum) {
     inputMST.value=(valNum+2).toFixed(2);
     inputPST.value=(valNum+1).toFixed(2);
     inputHST.value=(valNum-1).toFixed(2);
-
   }
-      }
-    if (source=="inputHST") {
+  if (source=="inputHST") {
     inputUTC.value=(valNum+10).toFixed(2);
     inputAST.value=(valNum+6).toFixed(2);
     inputEST.value=(valNum+5).toFixed(2);
@@ -100,11 +88,7 @@ function tempConverter(source,valNum) {
     inputMST.value=(valNum+3).toFixed(2);
     inputPST.value=(valNum+2).toFixed(2);
     inputKST.value=(valNum+1).toFixed(2);
-
   }
-  
-  
-  
 }
 
 </script>
