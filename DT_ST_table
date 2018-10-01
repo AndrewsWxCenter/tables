@@ -4,8 +4,8 @@
 <script>
 
 function show(nr) {
-    document.getElementById("DT").style.display="none";
-    document.getElementById("ST").style.display="none";
+    document.getElementById("table1").style.display="none";
+    document.getElementById("table2").style.display="none";
     document.getElementById("table"+nr).style.display="block";
 }
 
@@ -13,20 +13,28 @@ function show(nr) {
 
 </head>
 
+<body>
+<br>
+<hr>
+<br>
 
 <table>
-    <tr>
-        <td>
-            <button type="button" onclick='show(1);'>Daylight Time Table</button>
-            <br />
-            <button type="button" onclick='show(2);'>Standard Time Table</button>
-            <br />
-        </td>
-        <td>
-            <div id="DT">
-            
-            <table class="UTCtoDT">
+<tr>
+<td>
+<button type="button" onclick='show(1);'>Daylight Time Table</button>
+<button type="button" onclick='show(2);'>Standard Time Table</button>
+<br />
+</td>
+</tr>
 
+<tr>
+<td>
+<br>
+<br>
+<div id="table1">
+            
+<table class="UTCtoDT">
+<caption style="font-weight:bold; font-size:17px";>DAYLIGHT SAVING TIME CONVERSION TABLE:<br></caption>
 <thead>
 <tr>
 <th>HST</th>
@@ -285,13 +293,12 @@ function show(nr) {
 </tbody>
 </table>
             
-            </div>
+</div>
            
+<div id="table2"> 
             
-            <div id="ST"> 
-            
-            <table class="UTCtoST">
-
+<table class="UTCtoST">
+<caption style="font-weight:bold; font-size:17px";>STANDARD TIME CONVERSION TABLE:<br></caption>
 <thead>
 <tr>
 <th>HST</th>
@@ -550,11 +557,12 @@ function show(nr) {
 </tbody>
 
 </table>
-    
-            
-            
-            </div>   
+
+</div>   
            
-        </td>
-    </tr>
+</td>
+</tr>
+
 </table>
+
+</body>
