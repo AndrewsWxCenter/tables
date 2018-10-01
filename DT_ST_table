@@ -4,8 +4,8 @@
 <script>
 
 function show(nr) {
-    document.getElementById("table1").style.display="none";
-    document.getElementById("table2").style.display="none";
+    document.getElementById("DT").style.display="none";
+    document.getElementById("ST").style.display="none";
     document.getElementById("table"+nr).style.display="block";
 }
 
@@ -17,13 +17,13 @@ function show(nr) {
 <table>
     <tr>
         <td>
-            <button type="button" onclick='show(1);'>Daylight Saving Time Table</button>
+            <button type="button" onclick='show(1);'>Daylight Time Table</button>
             <br />
-            <button type="button" onclick='show(2);'>Standard Time Table<button>
+            <button type="button" onclick='show(2);'>Standard Time Table</button>
             <br />
         </td>
         <td>
-            <div id="table1">
+            <div id="DT">
             
             <table class="UTCtoDT">
 
@@ -288,7 +288,7 @@ function show(nr) {
             </div>
            
             
-            <div id="table2"> 
+            <div id="ST"> 
             
             <table class="UTCtoST">
 
