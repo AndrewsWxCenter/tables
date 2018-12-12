@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+</head>
+
+<body>
+
+<!-- Watch/Warning/Advisory Table: ----------------------------------------------------- -->
+<table align="center" class="emertable">
+<caption style="font-weight:bold; font-size:17px";>UNDERSTANDING WEATHER ALERTS:<br></caption>
+ <tr>
+  <td width="30%" bgcolor="#B36262"><center><b>EMERGENCY</b></center></td><td><center>Significant and life-threatening weather is about to occur in a densely populated area. Seek sturdy shelter with extreme haste, as dangerous weather has been <b><i>observed or confirmed on the ground</i></b>. Weather emergencies are rare, but must be taken with the utmost seriousness when issued.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="warntable">
+ <tr>
+  <td width="30%" bgcolor="#FC8888"><center><b>WARNING</b></center></td><td><center>Significant or severe weather is about to occur. Seek shelter immediately. If a warning is issued, then be aware that dangerous weather conditions have been <b><i>observed or confirmed on the ground</i></b> and are likely heading to your location.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="watchtable">
+ <tr>
+  <td width="30%" bgcolor="#FFD669"><center><b>WATCH</b></center></td><td><center>Weather watches are meant to make the public more aware of the chance for significant weather. This means that conditions are favorable for the specified weather to occur. Weather watches are issued when high confidence exists in significant weather developing soon.</center></td>
+ </tr>
+</table>
+
+<table align="center" class="advtable">
+ <tr>
+  <td width="30%" bgcolor="#FFFFAA"><center><b>ADVISORY</b></center></td><td><center>Do NOT underestimate or ignore a weather advisory. Advisories alert the public to potential significant weather that may stay below warning criteria, but will still pose a threat to life and property. Remain vigilant for potential changes to the weather advisory.</center></td>
+ </tr>
+</table>
+
+</body>
+</html>
