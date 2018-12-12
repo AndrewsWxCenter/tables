@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+<link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+<script>
+
+<!-- Temperature Conversion function ----------------------------------------------------- -->
+function tempConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputFah = document.getElementById("inputFah");
+  var inputCel = document.getElementById("inputCel");
+  var inputKel = document.getElementById("inputKel");
+  var inputRan = document.getElementById("inputRan");
+
+  if (source=="inputFah") {
+    inputCel.value=(valNum*0.55555-17.77777).toFixed(2);
+    inputKel.value=(valNum*0.55555+255.37222).toFixed(2);
+    inputRan.value=(valNum*1+459.67).toFixed(2);
+  }
+  if (source=="inputCel") {
+    inputFah.value=(valNum*1.8+32).toFixed(2);
+    inputKel.value=(valNum*1+273.15).toFixed(2);
+    inputRan.value=(valNum*1+273.15*1.8).toFixed(2);
+  }
+  if (source=="inputKel") {
+    inputFah.value=(valNum*1.8-459.67).toFixed(2);
+    inputCel.value=(valNum*1-273.15).toFixed(2);
+    inputRan.value=(valNum*1.8).toFixed(2);
+  }
+  if (source=="inputRan") {
+    inputFah.value=(valNum*1-459.67).toFixed(2);
+    inputCel.value=(valNum*1-491.67*0.55555).toFixed(2);
+    inputKel.value=(valNum*0.55555).toFixed(2);
+  }
+}
+
+<!-- Speed Conversion function ----------------------------------------------------- -->
+function speedConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputMph = document.getElementById("inputMph");
+  var inputKts = document.getElementById("inputKts");
+  var inputMps = document.getElementById("inputMps");
+  var inputKph = document.getElementById("inputKph");
+
+  if (source=="inputMph") {
+    inputKts.value=(valNum*0.86897).toFixed(2);
+    inputMps.value=(valNum*0.4470).toFixed(2);
+    inputKph.value=(valNum*1.60934).toFixed(2);
+  }
+  if (source=="inputKts") {
+    inputMph.value=(valNum*1.1508).toFixed(2);
+    inputMps.value=(valNum*0.5144).toFixed(2);
+    inputKph.value=(valNum*1.852).toFixed(2);
+  }
+  if (source=="inputMps") {
+    inputMph.value=(valNum*2.23694).toFixed(2);
+    inputKts.value=(valNum*1.944).toFixed(2);
+    inputKph.value=(valNum*3.6).toFixed(2);
+  }
+  if (source=="inputKph") {
+    inputMph.value=(valNum*0.621388).toFixed(2);
+    inputKts.value=(valNum*0.53996).toFixed(2);
+    inputMps.value=(valNum*0.277777).toFixed(2);
+  }
+}
+
+<!-- Area Conversion function ----------------------------------------------------- -->
+function areaConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputAcs = document.getElementById("inputAcs");
+  var inputHcs = document.getElementById("inputHcs");
+  var inputSqf = document.getElementById("inputSqf");
+  var inputSqi = document.getElementById("inputSqi");
+  var inputSqk = document.getElementById("inputSqk");
+  var inputSqm = document.getElementById("inputSqm");
+  var inputFtb = document.getElementById("inputFtb");
+  var inputNCs = document.getElementById("inputNCs");
+  var inputWak = document.getElementById("inputWak");
+  var inputRAH = document.getElementById("inputRAH");
+  var inputUSA = document.getElementById("inputUSA");
+  var inputSAE = document.getElementById("inputSAE");
+  var inputAtl = document.getElementById("inputAtl");
+
+  if (source=="inputAcs") {
+    inputHcs.value=(valNum*0.404686).toFixed(2);
+    inputSqf.value=(valNum*43560).toFixed(2);
+    inputSqi.value=(valNum*0.0015625).toFixed(2);
+    inputSqk.value=(valNum*0.00404686).toFixed(2);
+    inputSqm.value=(valNum*4046.86).toFixed(2);
+    inputFtb.value=(valNum*0.75625).toFixed(2);
+    inputNCs.value=(valNum*0.0000000290324978).toFixed(2);
+    inputWak.value=(valNum*0.00000182322).toFixed(2);
+    inputRAH.value=(valNum*0.0000000941775662).toFixed(2);
+    inputUSA.value=(valNum*0.00000000041153705).toFixed(2);
+    inputAtl.value=(valNum*0.000000000038012407).toFixed(2);
+    inputSAE.value=(valNum*0.0000000000079340166).toFixed(2);
+  }
+  if (source=="inputHcs") {
+    inputAcs.value=(valNum*2.47105).toFixed(2);
+    inputSqf.value=(valNum*107639).toFixed(2);
+    inputSqi.value=(valNum*0.00386102).toFixed(2);
+    inputSqk.value=(valNum*0.01).toFixed(2);
+    inputSqm.value=(valNum*10000).toFixed(2);
+    inputFtb.value=(valNum*1.86873448366).toFixed(2);
+    inputNCs.value=(valNum*0.0000000717408491).toFixed(2);
+    inputWak.value=(valNum*0.00000450527).toFixed(2);
+    inputRAH.value=(valNum*0.000000232717739).toFixed(2);
+    inputUSA.value=(valNum*0.00000000101692978).toFixed(2);
+    inputAtl.value=(valNum*0.00000000093930665).toFixed(2);
+    inputSAE.value=(valNum*0.00000000019605365).toFixed(2);
+  }
+  if (source=="inputSqf") {
+    inputAcs.value=(valNum*2.47105).toFixed(2);
+    inputHcs.value=(valNum*0.000022957).toFixed(2);
+    inputSqi.value=(valNum*0.00000003578).toFixed(2);
+    inputSqk.value=(valNum*0.000000092903).toFixed(2);
+    inputSqm.value=(valNum*0.092903).toFixed(2);
+    inputFtb.value=(valNum*0.0000173611039736).toFixed(2);
+    inputNCs.value=(valNum*0.00000000000066649338).toFixed(2);
+    inputWak.value=(valNum*0.000000000041858518).toFixed(2);
+    inputRAH.value=(valNum*0.0000000000021565909).toFixed(2);
+    inputUSA.value=(valNum*0.0000000000000094238692).toFixed(2);
+    inputAtl.value=(valNum*0.00000000000000087045372).toFixed(2);
+    inputSAE.value=(valNum*0.00000000000000018213972).toFixed(2);
+  }
+  if (source=="inputSqi") {
+    inputAcs.value=(valNum*640).toFixed(2);
+    inputHcs.value=(valNum*258.999).toFixed(2);
+    inputSqf.value=(valNum*27780000).toFixed(2);
+    inputSqk.value=(valNum*2.58999).toFixed(2);
+    inputSqm.value=(valNum*2590000).toFixed(2);
+    inputFtb.value=(valNum*484.000009344).toFixed(2);
+    inputNCs.value=(valNum*0.00001858079).toFixed(2);
+    inputWak.value=(valNum*0.00116686114).toFixed(2);
+    inputRAH.value=(valNum*16591).toFixed(2);
+    inputUSA.value=(valNum*3796742).toFixed(2);
+    inputAtl.value=(valNum*41105000).toFixed(2);
+    inputSAE.value=(valNum*196936993.635).toFixed(2);
+  }
+    if (source=="inputSqk") {
+    inputAcs.value=(valNum*247.105).toFixed(2);
+    inputHcs.value=(valNum*100).toFixed(2);
+    inputSqf.value=(valNum*10760000).toFixed(2);
+    inputSqi.value=(valNum*0.386102).toFixed(2);
+    inputSqm.value=(valNum*1000000).toFixed(2);
+    inputFtb.value=(valNum*186.873448366).toFixed(2);
+    inputNCs.value=(valNum*0.00000718447).toFixed(2);
+    inputWak.value=(valNum*0.00045045045).toFixed(2);
+    inputRAH.value=(valNum*42970.493).toFixed(2);
+    inputUSA.value=(valNum*9833516.638).toFixed(2);
+    inputAtl.value=(valNum*106461461.28).toFixed(2);
+    inputSAE.value=(valNum*510064472).toFixed(2);
+  }
+      if (source=="inputSqm") {
+    inputAcs.value=(valNum*0.000247105).toFixed(2);
+    inputHcs.value=(valNum*0.0001).toFixed(2);
+    inputSqf.value=(valNum*10.7639).toFixed(2);
+    inputSqi.value=(valNum*0.0000003861).toFixed(2);
+    inputSqk.value=(valNum*0.000001).toFixed(2);
+    inputFtb.value=(valNum*0.000186873448366).toFixed(2);
+    inputNCs.value=(valNum*0.0000000000071741673).toFixed(2);
+    inputWak.value=(valNum*0.00000000045045045).toFixed(2);
+    inputRAH.value=(valNum*0.000000000023271653).toFixed(2);
+    inputUSA.value=(valNum*0.00000000000010169245).toFixed(2);
+    inputAtl.value=(valNum*0.0000000000000093930179).toFixed(2);
+    inputSAE.value=(valNum*0.0000000000000019605365).toFixed(2);
+  }
+        if (source=="inputFtb") {
+    inputAcs.value=(valNum*1.3223128549).toFixed(2);
+    inputHcs.value=(valNum*0.5351215).toFixed(2);
+    inputSqf.value=(valNum*57600.0236806).toFixed(2);
+    inputSqi.value=(valNum*0.00206611566259).toFixed(2);
+    inputSqk.value=(valNum*0.005351215).toFixed(2);
+    inputSqm.value=(valNum*5351.215).toFixed(2);
+    inputNCs.value=(valNum*0.000000038390079).toFixed(2);
+    inputWak.value=(valNum*0.00000241087).toFixed(2);
+    inputRAH.value=(valNum*0.000000124532316).toFixed(2);
+    inputUSA.value=(valNum*0.00000000054418121).toFixed(2);
+    inputAtl.value=(valNum*0.000000000050264339).toFixed(2);
+    inputSAE.value=(valNum*0.000000000010491252).toFixed(2);
+  }
+          if (source=="inputNCs") {
+    inputAcs.value=(valNum*34444160.0199).toFixed(2);
+    inputHcs.value=(valNum*13939059.9992).toFixed(2);
+    inputSqf.value=(valNum*1500390000000).toFixed(2);
+    inputSqi.value=(valNum*53819).toFixed(2);
+    inputSqk.value=(valNum*139389).toFixed(2);
+    inputSqm.value=(valNum*139388999194).toFixed(2);
+    inputFtb.value=(valNum*26048396.5141).toFixed(2);
+    inputWak.value=(valNum*62.7992998833).toFixed(2);
+    inputRAH.value=(valNum*3.24386715689).toFixed(2);
+    inputUSA.value=(valNum*0.01417504797).toFixed(2);
+    inputAtl.value=(valNum*0.00130930543).toFixed(2);
+    inputSAE.value=(valNum*0.00027327721).toFixed(2);
+  }
+    if (source=="inputWak") {
+    inputAcs.value=(valNum*548480.161473).toFixed(2);
+    inputHcs.value=(valNum*221962.27973).toFixed(2);
+    inputSqf.value=(valNum*23891799083.7).toFixed(2);
+    inputSqi.value=(valNum*857).toFixed(2);
+    inputSqk.value=(valNum*2220).toFixed(2);
+    inputSqm.value=(valNum*2220000002.22).toFixed(2);
+    inputFtb.value=(valNum*414788.022581).toFixed(2);
+    inputNCs.value=(valNum*0.0159237444).toFixed(2);
+    inputRAH.value=(valNum*0.05165451148).toFixed(2);
+    inputUSA.value=(valNum*0.00022571984).toFixed(2);
+    inputAtl.value=(valNum*0.00002084904).toFixed(2);
+    inputSAE.value=(valNum*0.00000435239).toFixed(2);
+  }
+    if (source=="inputRAH") {
+    inputAcs.value=(valNum*10618230.6116).toFixed(2);
+    inputHcs.value=(valNum*4297049.2733).toFixed(2);
+    inputSqf.value=(valNum*462530733486).toFixed(2);
+    inputSqi.value=(valNum*16591).toFixed(2);
+    inputSqk.value=(valNum*42970.492733).toFixed(2);
+    inputSqm.value=(valNum*42970492733).toFixed(2);
+    inputFtb.value=(valNum*8030044.15502).toFixed(2);
+    inputNCs.value=(valNum*0.30827402961).toFixed(2);
+    inputWak.value=(valNum*19.3593932322).toFixed(2);
+    inputUSA.value=(valNum*0.00436979915).toFixed(2);
+    inputAtl.value=(valNum*0.00040362486).toFixed(2);
+    inputSAE.value=(valNum*0.00008424521).toFixed(2);
+  }
+    if (source=="inputUSA") {
+    inputAcs.value=(valNum*2429912731.53).toFixed(2);
+    inputHcs.value=(valNum*983351663.674).toFixed(2);
+    inputSqf.value=(valNum*105847137732000).toFixed(2);
+    inputSqi.value=(valNum*3796742).toFixed(2);
+    inputSqk.value=(valNum*9833516.63674).toFixed(2);
+    inputSqm.value=(valNum*42970492733).toFixed(2);
+    inputFtb.value=(valNum*1837623163.48).toFixed(2);
+    inputNCs.value=(valNum*70.5464984485).toFixed(2);
+    inputWak.value=(valNum*4430.27071179).toFixed(2);
+    inputRAH.value=(valNum*228.843469351).toFixed(2);
+    inputAtl.value=(valNum*0.092366914).toFixed(2);
+    inputSAE.value=(valNum*0.019278968).toFixed(2);
+  }
+    if (source=="inputAtl") {
+    inputAcs.value=(valNum*26307176739.9).toFixed(2);
+    inputHcs.value=(valNum*10646146126.2).toFixed(2);
+    inputSqf.value=(valNum*1145942125240000).toFixed(2);
+    inputSqi.value=(valNum*41105000).toFixed(2);
+    inputSqk.value=(valNum*106461461.262).toFixed(2);
+    inputSqm.value=(valNum*106461461262000).toFixed(2);
+    inputFtb.value=(valNum*19894820384.1).toFixed(2);
+    inputNCs.value=(valNum*763.763726565).toFixed(2);
+    inputWak.value=(valNum*47963.8273046).toFixed(2);
+    inputRAH.value=(valNum*2477.54806823).toFixed(2);
+    inputUSA.value=(valNum*10.8263874659).toFixed(2);
+    inputSAE.value=(valNum*0.20872157757).toFixed(2);
+  }
+    if (source=="inputSAE") {
+    inputAcs.value=(valNum*126039564502).toFixed(2);
+    inputHcs.value=(valNum*51006447200.1).toFixed(2);
+    inputSqf.value=(valNum*5490290647250000).toFixed(2);
+    inputSqi.value=(valNum*196936993.661).toFixed(2);
+    inputSqk.value=(valNum*510064472).toFixed(2);
+    inputSqm.value=(valNum*510064472001000).toFixed(2);
+    inputFtb.value=(valNum*95317506772).toFixed(2);
+    inputNCs.value=(valNum*3659.24661664).toFixed(2);
+    inputWak.value=(valNum*229798.125625).toFixed(2);
+    inputRAH.value=(valNum*11870.1099187).toFixed(2);
+    inputUSA.value=(valNum*51.8699963445).toFixed(2);
+    inputAtl.value=(valNum*4.79107149157).toFixed(2);
+  }
+}
+
+<!-- Length Conversion function ----------------------------------------------------- -->
+function lengthConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputIn = document.getElementById("inputIn");
+  var inputFt = document.getElementById("inputFt");
+  var inputYd = document.getElementById("inputYd");
+  var inputFm = document.getElementById("inputFm");
+  var inputMe = document.getElementById("inputMe");
+  var inputCm = document.getElementById("inputCm");
+  var inputMm = document.getElementById("inputMm");
+  var inputMi = document.getElementById("inputMi");
+  var inputNm = document.getElementById("inputNm");
+  var inputKm = document.getElementById("inputKm");
+  var inputRD = document.getElementById("inputRD");
+  var inputER = document.getElementById("inputER");
+  var inputAU = document.getElementById("inputAU");
+
+  if (source=="inputIn") {
+    inputFt.value=(valNum*0.0833333333333).toFixed(4);
+    inputYd.value=(valNum*0.0277777777778).toFixed(4);
+    inputFm.value=(valNum*0.0138888888889).toFixed(4);
+    inputMe.value=(valNum*0.0254).toFixed(4);
+    inputCm.value=(valNum*2.54).toFixed(4);
+    inputMm.value=(valNum*25.4).toFixed(4);
+    inputMi.value=(valNum*0.0000157828282828).toFixed(4);
+    inputNm.value=(valNum*0.0000137149028078).toFixed(4);
+    inputKm.value=(valNum*0.0000254).toFixed(4);
+    inputRD.value=(valNum*0.000000644197073).toFixed(4);
+    inputER.value=(valNum*0.00000000398681526).toFixed(4);
+    inputAU.value=(valNum*0.000000000000169788512906).toFixed(4);
+  }
+  if (source=="inputFt") {
+    inputIn.value=(valNum*12).toFixed(4);
+    inputYd.value=(valNum*0.333333333333).toFixed(4);
+    inputFm.value=(valNum*0.166666666667).toFixed(4);
+    inputMe.value=(valNum*0.3048).toFixed(4);
+    inputCm.value=(valNum*30.48).toFixed(4);
+    inputMm.value=(valNum*304.8).toFixed(4);
+    inputMi.value=(valNum*0.000189393939394).toFixed(4);
+    inputNm.value=(valNum*0.000164578833693).toFixed(4);
+    inputKm.value=(valNum*0.0003048).toFixed(4);
+    inputRD.value=(valNum*0.00000773036).toFixed(4);
+    inputER.value=(valNum*0.0000000478417831).toFixed(4);
+    inputAU.value=(valNum*0.00000000000203746215487).toFixed(4);
+  }
+  if (source=="inputYd") {
+    inputIn.value=(valNum*36).toFixed(4);
+    inputFt.value=(valNum*3).toFixed(4);
+    inputFm.value=(valNum*0.5).toFixed(4);
+    inputMe.value=(valNum*0.9144).toFixed(4);
+    inputCm.value=(valNum*91.44).toFixed(4);
+    inputMm.value=(valNum*914.4).toFixed(4);
+    inputMi.value=(valNum*0.000568181818182).toFixed(4);
+    inputNm.value=(valNum*0.00049373650108).toFixed(4);
+    inputKm.value=(valNum*0.0009144).toFixed(4);
+    inputRD.value=(valNum*0.00002319109).toFixed(4);
+    inputER.value=(valNum*0.000000143525349).toFixed(4);
+    inputAU.value=(valNum*0.0000000000061123864646).toFixed(4);
+  }
+    if (source=="inputFm") {
+    inputIn.value=(valNum*72).toFixed(4);
+    inputFt.value=(valNum*6).toFixed(4);
+    inputYd.value=(valNum*2).toFixed(4);
+    inputMe.value=(valNum*1.8288).toFixed(4);
+    inputCm.value=(valNum*182.88).toFixed(4);
+    inputMm.value=(valNum*1828.8).toFixed(4);
+    inputMi.value=(valNum*0.00113636363636).toFixed(4);
+    inputNm.value=(valNum*0.00098747300216).toFixed(4);
+    inputKm.value=(valNum*0.0018288).toFixed(4);
+    inputRD.value=(valNum*0.00004638218).toFixed(4);
+    inputER.value=(valNum*0.000000287050698).toFixed(4);
+    inputAU.value=(valNum*0.0000000000122247729292).toFixed(4);
+  }
+      if (source=="inputMe") {
+    inputIn.value=(valNum*39.3700787402).toFixed(4);
+    inputFt.value=(valNum*3.28083989501).toFixed(4);
+    inputYd.value=(valNum*1.09361329834).toFixed(4);
+    inputFm.value=(valNum*0.546806649169).toFixed(4);
+    inputCm.value=(valNum*100).toFixed(4);
+    inputMm.value=(valNum*1000).toFixed(4);
+    inputMi.value=(valNum*0.000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.001).toFixed(4);
+    inputRD.value=(valNum*0.00002536208).toFixed(4);
+    inputER.value=(valNum*0.000000156961231).toFixed(4);
+    inputAU.value=(valNum*0.00000000000668458712227).toFixed(4);
+  }
+        if (source=="inputCm") {
+    inputIn.value=(valNum*0.393700787402).toFixed(4);
+    inputFt.value=(valNum*0.0328083989501).toFixed(4);
+    inputYd.value=(valNum*0.0109361329834).toFixed(4);
+    inputFm.value=(valNum*0.00546806649169).toFixed(4);
+    inputMe.value=(valNum*0.01).toFixed(4);
+    inputMm.value=(valNum*10).toFixed(4);
+    inputMi.value=(valNum*0.00000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.00000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.00001).toFixed(4);
+    inputRD.value=(valNum*0.000000253620895).toFixed(4);
+    inputER.value=(valNum*0.00000000156961231).toFixed(4);
+    inputAU.value=(valNum*0.0000000000000668458712227).toFixed(4);
+  }
+          if (source=="inputMm") {
+    inputIn.value=(valNum*0.0393700787402).toFixed(4);
+    inputFt.value=(valNum*0.00328083989501).toFixed(4);
+    inputYd.value=(valNum*0.00109361329834).toFixed(4);
+    inputFm.value=(valNum*0.000546806649169).toFixed(4);
+    inputMe.value=(valNum*0.0001).toFixed(4);
+    inputCm.value=(valNum*0.1).toFixed(4);
+    inputMi.value=(valNum*0.000000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.000000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.000001).toFixed(4);
+    inputRD.value=(valNum*0.0000000253620895).toFixed(4);
+    inputER.value=(valNum*0.00000000015696123).toFixed(4);
+    inputAU.value=(valNum*0.00000000000000668458712227).toFixed(4);
+  }
+            if (source=="inputMi") {
+    inputIn.value=(valNum*63360).toFixed(4);
+    inputFt.value=(valNum*5280).toFixed(4);
+    inputYd.value=(valNum*1760).toFixed(4);
+    inputFm.value=(valNum*880).toFixed(4);
+    inputMe.value=(valNum*1609.344).toFixed(4);
+    inputCm.value=(valNum*160934.4).toFixed(4);
+    inputMm.value=(valNum*1609344).toFixed(4);
+    inputNm.value=(valNum*0.868976241901).toFixed(4);
+    inputKm.value=(valNum*1.609344).toFixed(4);
+    inputRD.value=(valNum*0.04081632653).toFixed(4);
+    inputER.value=(valNum*0.00025260461).toFixed(4);
+    inputAU.value=(valNum*0.0000000107578001777).toFixed(4);
+  }
+              if (source=="inputNm") {
+    inputIn.value=(valNum*72913.3858268).toFixed(4);
+    inputFt.value=(valNum*6076.11548556).toFixed(4);
+    inputYd.value=(valNum*2025.37182852).toFixed(4);
+    inputFm.value=(valNum*1012.68591426).toFixed(4);
+    inputMe.value=(valNum*1852).toFixed(4);
+    inputCm.value=(valNum*185200).toFixed(4);
+    inputMm.value=(valNum*1852000).toFixed(4);
+    inputMi.value=(valNum*1.15077944802).toFixed(4);
+    inputKm.value=(valNum*1.852).toFixed(4);
+    inputRD.value=(valNum*0.04697058971).toFixed(4);
+    inputER.value=(valNum*0.00029069219).toFixed(4);
+    inputAU.value=(valNum*0.0000000123798553504).toFixed(4);
+  }
+                if (source=="inputKm") {
+    inputIn.value=(valNum*39370.0787402).toFixed(4);
+    inputFt.value=(valNum*3280.83989501).toFixed(4);
+    inputYd.value=(valNum*1093.61329834).toFixed(4);
+    inputFm.value=(valNum*546.806649169).toFixed(4);
+    inputMe.value=(valNum*1000).toFixed(4);
+    inputCm.value=(valNum*100000).toFixed(4);
+    inputMm.value=(valNum*1000000).toFixed(4);
+    inputMi.value=(valNum*0.621371192237).toFixed(4);
+    inputNm.value=(valNum*0.539956803456).toFixed(4);
+    inputRD.value=(valNum*0.02536208947).toFixed(4);
+    inputER.value=(valNum*0.00015696123).toFixed(4);
+    inputAU.value=(valNum*0.00000000668458712227).toFixed(4);
+  }
+                  if (source=="inputRD") {
+    inputIn.value=(valNum*1552320).toFixed(4);
+    inputFt.value=(valNum*129360).toFixed(4);
+    inputYd.value=(valNum*43120).toFixed(4);
+    inputFm.value=(valNum*21560).toFixed(4);
+    inputMe.value=(valNum*39428.928).toFixed(4);
+    inputCm.value=(valNum*3942892.8).toFixed(4);
+    inputMm.value=(valNum*39428928).toFixed(4);
+    inputMi.value=(valNum*24.5).toFixed(4);
+    inputNm.value=(valNum*21.2899179266).toFixed(4);
+    inputKm.value=(valNum*39.428928).toFixed(4);
+    inputER.value=(valNum*0.00618881305).toFixed(4);
+    inputAU.value=(valNum*0.000000263566104354).toFixed(4);
+  }
+                    if (source=="inputER") {
+    inputIn.value=(valNum*250826771.654).toFixed(4);
+    inputFt.value=(valNum*20902230.9711).toFixed(4);
+    inputYd.value=(valNum*6967410.32371).toFixed(4);
+    inputFm.value=(valNum*3483705.16185).toFixed(4);
+    inputMe.value=(valNum*6371000).toFixed(4);
+    inputCm.value=(valNum*637100000).toFixed(4);
+    inputMm.value=(valNum*6371000000).toFixed(4);
+    inputMi.value=(valNum*3958.75586574).toFixed(4);
+    inputNm.value=(valNum*3440.06479482).toFixed(4);
+    inputKm.value=(valNum*6371).toFixed(4);
+    inputRD.value=(valNum*161.581872071).toFixed(4);
+    inputAU.value=(valNum*0.000042587504556).toFixed(4);
+  }
+                      if (source=="inputAU") {
+    inputIn.value=(valNum*5889679948820).toFixed(4);
+    inputFt.value=(valNum*490806662402).toFixed(4);
+    inputYd.value=(valNum*163602220801).toFixed(4);
+    inputFm.value=(valNum*81801110400.3).toFixed(4);
+    inputMe.value=(valNum*149597870700).toFixed(4);
+    inputCm.value=(valNum*14959787070000).toFixed(4);
+    inputMm.value=(valNum*149597870700000).toFixed(4);
+    inputMi.value=(valNum*92955807.273).toFixed(4);
+    inputNm.value=(valNum*80776388.067).toFixed(4);
+    inputKm.value=(valNum*149597870.7).toFixed(4);
+    inputRD.value=(valNum*3794114.58257).toFixed(4);
+    inputER.value=(valNum*23481.0658766).toFixed(4);
+  }
+}
+
+<!-- Pressure Conversion function ----------------------------------------------------- -->
+function presConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputAtm = document.getElementById("inputAtm");
+  var inputmbs = document.getElementById("inputmbs");
+  var inputiHg = document.getElementById("inputiHg");
+  var inputPSI = document.getElementById("inputPSI");
+
+
+  if (source=="inputAtm") {
+    inputmbs.value=(valNum*1013.25).toFixed(2);
+    inputiHg.value=(valNum*29.9213).toFixed(2);
+    inputPSI.value=(valNum*14.6959).toFixed(2);
+  }
+  if (source=="inputmbs") {
+    inputAtm.value=(valNum*0.000986923).toFixed(2);
+    inputiHg.value=(valNum*0.02953).toFixed(2);
+    inputPSI.value=(valNum*0.0145038).toFixed(2);
+  }
+  if (source=="inputiHg") {
+    inputAtm.value=(valNum*0.0334211).toFixed(2);
+    inputmbs.value=(valNum*33.8639).toFixed(2);
+    inputPSI.value=(valNum*0.491154).toFixed(2);
+  }
+  if (source=="inputPSI") {
+    inputAtm.value=(valNum*0.068046).toFixed(2);
+    inputmbs.value=(valNum*68.9476).toFixed(2);
+    inputiHg.value=(valNum*2.03602).toFixed(2);
+  }
+}
+
+<!-- Time Conversion function ----------------------------------------------------- -->
+function timeConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputSec = document.getElementById("inputSec");
+  var inputMin = document.getElementById("inputMin");
+  var inputHrs = document.getElementById("inputHrs");
+  var inputDay = document.getElementById("inputDay");
+  var inputWks = document.getElementById("inputWks");
+  var inputMon = document.getElementById("inputMon");
+  var inputYrs = document.getElementById("inputYrs");
+  var inputDcs = document.getElementById("inputDcs");
+  var inputCen = document.getElementById("inputCen");
+  var inputMil = document.getElementById("inputMil");
+  var inputGal = document.getElementById("inputGal");
+  var inputMar = document.getElementById("inputMar");
+  var inputJup = document.getElementById("inputJup");
+
+  if (source=="inputSec") {
+    inputMin.value=(valNum*0.0166666666667).toFixed(2);
+    inputHrs.value=(valNum*0.000277777777778).toFixed(2);
+    inputDay.value=(valNum*0.0000115740740741).toFixed(2);
+    inputWks.value=(valNum*0.00000165343915344).toFixed(2);
+    inputMon.value=(valNum*0.000000380517503805).toFixed(2);
+    inputYrs.value=(valNum*0.0000000317097919838).toFixed(2);
+    inputDcs.value=(valNum*0.00000000317057704502).toFixed(2);
+    inputCen.value=(valNum*0.000000000317057704502).toFixed(2);
+    inputMil.value=(valNum*0.0000000000317057704502).toFixed(2);
+    inputMar.value=(valNum*0.0000000168477599).toFixed(2);
+    inputJup.value=(valNum*0.00000000267367555).toFixed(2);
+    inputGal.value=(valNum*0.000000000000000137868660799).toFixed(2);
+  }
+  if (source=="inputMin") {
+    inputSec.value=(valNum*60).toFixed(2);
+    inputHrs.value=(valNum*0.0166666666667).toFixed(2);
+    inputDay.value=(valNum*0.000694444444444).toFixed(2);
+    inputWks.value=(valNum*0.0000992063492063).toFixed(2);
+    inputMon.value=(valNum*0.0000228310502283).toFixed(2);
+    inputYrs.value=(valNum*0.00000190258751903).toFixed(2);
+    inputDcs.value=(valNum*0.000000190234622701).toFixed(2);
+    inputCen.value=(valNum*0.0000000190234622701).toFixed(2);
+    inputMil.value=(valNum*0.00000000190234622701).toFixed(2);
+    inputMar.value=(valNum*0.00000101086).toFixed(2);
+    inputJup.value=(valNum*0.00000030193339).toFixed(2);
+    inputGal.value=(valNum*0.00000000000000827211964794).toFixed(2);
+  }
+    if (source=="inputHrs") {
+    inputSec.value=(valNum*3600).toFixed(2);
+    inputMin.value=(valNum*60).toFixed(2);
+    inputDay.value=(valNum*0.0416666666667).toFixed(2);
+    inputWks.value=(valNum*0.00595238095238).toFixed(2);
+    inputMon.value=(valNum*0.0013698630137).toFixed(2);
+    inputYrs.value=(valNum*0.000114155251142).toFixed(2);
+    inputDcs.value=(valNum*0.0000114140773621).toFixed(2);
+    inputCen.value=(valNum*0.00000114140773621).toFixed(2);
+    inputMil.value=(valNum*0.000000114140773621).toFixed(2);
+    inputMar.value=(valNum*0.00006065193).toFixed(2);
+    inputJup.value=(valNum*0.000018116).toFixed(2);
+    inputGal.value=(valNum*0.000000000000496327178876).toFixed(2);
+  }
+      if (source=="inputDay") {
+    inputSec.value=(valNum*86400).toFixed(2);
+    inputMin.value=(valNum*1440).toFixed(2);
+    inputHrs.value=(valNum*24).toFixed(2);
+    inputWks.value=(valNum*0.142857142857).toFixed(2);
+    inputMon.value=(valNum*0.0328767123288).toFixed(2);
+    inputYrs.value=(valNum*0.0027397260274).toFixed(2);
+    inputDcs.value=(valNum*0.00027393785669).toFixed(2);
+    inputCen.value=(valNum*0.000027393785669).toFixed(2);
+    inputMil.value=(valNum*0.0000027393785669).toFixed(2);
+    inputMar.value=(valNum*0.00145564645).toFixed(2);
+    inputJup.value=(valNum*0.00043478412).toFixed(2);
+    inputGal.value=(valNum*0.000000000011911852293).toFixed(2);
+  }
+        if (source=="inputWks") {
+    inputSec.value=(valNum*604800).toFixed(2);
+    inputMin.value=(valNum*10080).toFixed(2);
+    inputHrs.value=(valNum*168).toFixed(2);
+    inputDay.value=(valNum*7).toFixed(2);
+    inputMon.value=(valNum*0.230136986301).toFixed(2);
+    inputYrs.value=(valNum*0.0191780821918).toFixed(2);
+    inputDcs.value=(valNum*0.00191756499683).toFixed(2);
+    inputCen.value=(valNum*0.000191756499683).toFixed(2);
+    inputMil.value=(valNum*0.0000191756499683).toFixed(2);
+    inputMar.value=(valNum*0.01018952516).toFixed(2);
+    inputJup.value=(valNum*0.00304348885).toFixed(2);
+    inputGal.value=(valNum*0.0000000000833829660512).toFixed(2);
+  }
+          if (source=="inputMon") {
+    inputSec.value=(valNum*2628000).toFixed(2);
+    inputMin.value=(valNum*43800).toFixed(2);
+    inputHrs.value=(valNum*730).toFixed(2);
+    inputDay.value=(valNum*30.4166666667).toFixed(2);
+    inputWks.value=(valNum*4.34523809524).toFixed(2);
+    inputYrs.value=(valNum*0.0833333333333).toFixed(2);
+    inputDcs.value=(valNum*0.00833227647432).toFixed(2);
+    inputCen.value=(valNum*0.000833227647432).toFixed(2);
+    inputMil.value=(valNum*0.0000833227647432).toFixed(2);
+    inputMar.value=(valNum*0.04427591293).toFixed(2);
+    inputJup.value=(valNum*0.01322468371).toFixed(2);
+    inputGal.value=(valNum*0.00000000036231884058).toFixed(2);
+  }
+            if (source=="inputYrs") {
+    inputSec.value=(valNum*31536000).toFixed(2);
+    inputMin.value=(valNum*525600).toFixed(2);
+    inputHrs.value=(valNum*8760).toFixed(2);
+    inputDay.value=(valNum*365).toFixed(2);
+    inputWks.value=(valNum*52.1428571429).toFixed(2);
+    inputMon.value=(valNum*12).toFixed(2);
+    inputDcs.value=(valNum*0.0999873176918).toFixed(2);
+    inputCen.value=(valNum*0.00999873176918).toFixed(2);
+    inputMil.value=(valNum*0.000999873176918).toFixed(2);
+    inputMar.value=(valNum*0.53131095519).toFixed(2);
+    inputJup.value=(valNum*0.08431703204).toFixed(2);
+    inputGal.value=(valNum*0.00000000434782608696).toFixed(2);
+  }
+            if (source=="inputDcs") {
+    inputSec.value=(valNum*315400000).toFixed(2);
+    inputMin.value=(valNum*5256666.66667).toFixed(2);
+    inputHrs.value=(valNum*87611.1111111).toFixed(2);
+    inputDay.value=(valNum*3650.46296296).toFixed(2);
+    inputWks.value=(valNum*521.494708995).toFixed(2);
+    inputMon.value=(valNum*120.0152207).toFixed(2);
+    inputYrs.value=(valNum*10.0012683917).toFixed(2);
+    inputCen.value=(valNum*0.1).toFixed(2);
+    inputMil.value=(valNum*0.01).toFixed(2);
+    inputMar.value=(valNum*5.31378346236).toFixed(2);
+    inputJup.value=(valNum*0.44804245045).toFixed(2);
+    inputGal.value=(valNum*0.000000043483775616).toFixed(2);
+  }
+            if (source=="inputCen") {
+    inputSec.value=(valNum*3154000000).toFixed(2);
+    inputMin.value=(valNum*52566666.6667).toFixed(2);
+    inputHrs.value=(valNum*876111.111111).toFixed(2);
+    inputDay.value=(valNum*36504.6296296).toFixed(2);
+    inputWks.value=(valNum*5214.94708995).toFixed(2);
+    inputMon.value=(valNum*1200.152207).toFixed(2);
+    inputYrs.value=(valNum*100.012683917).toFixed(2);
+    inputDcs.value=(valNum*10).toFixed(2);
+    inputMil.value=(valNum*0.1).toFixed(2);
+    inputMar.value=(valNum*53.1378346236).toFixed(2);
+    inputJup.value=(valNum*4.48042450452).toFixed(2);
+    inputGal.value=(valNum*0.00000043483775616).toFixed(2);
+  }
+            if (source=="inputMil") {
+    inputSec.value=(valNum*31540000000).toFixed(2);
+    inputMin.value=(valNum*525666666.667).toFixed(2);
+    inputHrs.value=(valNum*8761111.11111).toFixed(2);
+    inputDay.value=(valNum*365046.296296).toFixed(2);
+    inputWks.value=(valNum*52149.4708995).toFixed(2);
+    inputMon.value=(valNum*12001.52207).toFixed(2);
+    inputYrs.value=(valNum*1000.12683917).toFixed(2);
+    inputDcs.value=(valNum*100).toFixed(2);
+    inputCen.value=(valNum*10).toFixed(2);
+    inputMar.value=(valNum*531.378346236).toFixed(2);
+    inputJup.value=(valNum*44.8042450452).toFixed(2);
+    inputGal.value=(valNum*0.0000043483775616).toFixed(2);
+  }
+            if (source=="inputMar") {
+    inputSec.value=(valNum*59355072).toFixed(2);
+    inputMin.value=(valNum*989251.199999).toFixed(2);
+    inputHrs.value=(valNum*16487.52).toFixed(2);
+    inputDay.value=(valNum*686.979999999).toFixed(2);
+    inputWks.value=(valNum*98.1399999999).toFixed(2);
+    inputMon.value=(valNum*22.5856438356).toFixed(2);
+    inputYrs.value=(valNum*1.8821369863).toFixed(2);
+    inputDcs.value=(valNum*0.188189828789).toFixed(2);
+    inputCen.value=(valNum*0.0188189828789).toFixed(2);
+    inputMil.value=(valNum*0.00188189828789).toFixed(2);
+    inputJup.value=(valNum*0.15869620457).toFixed(2);
+    inputGal.value=(valNum*0.00000000818320428826).toFixed(2);
+  }
+            if (source=="inputJup") {
+    inputSec.value=(valNum*374016960).toFixed(2);
+    inputMin.value=(valNum*6233616).toFixed(2);
+    inputHrs.value=(valNum*103893.6).toFixed(2);
+    inputDay.value=(valNum*4328.9).toFixed(2);
+    inputWks.value=(valNum*618.414285714).toFixed(2);
+    inputMon.value=(valNum*142.32).toFixed(2);
+    inputYrs.value=(valNum*11.86).toFixed(2);
+    inputDcs.value=(valNum*1.18584958782).toFixed(2);
+    inputCen.value=(valNum*0.118584958782).toFixed(2);
+    inputMil.value=(valNum*0.0118584958782).toFixed(2);
+    inputMar.value=(valNum*6.30134792862).toFixed(2);
+    inputGal.value=(valNum*0.0000000515652173913).toFixed(2);
+  }
+            if (source=="inputGal") {
+    inputSec.value=(valNum*7253280000000000).toFixed(2);
+    inputMin.value=(valNum*120888000000000).toFixed(2);
+    inputHrs.value=(valNum*2014800000000).toFixed(2);
+    inputDay.value=(valNum*83950000000).toFixed(2);
+    inputWks.value=(valNum*11992857142.9).toFixed(2);
+    inputMon.value=(valNum*2760000000).toFixed(2);
+    inputYrs.value=(valNum*230000000).toFixed(2);
+    inputDcs.value=(valNum*22997083.0691).toFixed(2);
+    inputCen.value=(valNum*2299708.30691).toFixed(2);
+    inputMil.value=(valNum*229970.830691).toFixed(2);
+    inputMar.value=(valNum*122201519.695).toFixed(2);
+    inputJup.value=(valNum*10303669.4515).toFixed(2);
+  }
+}
+</script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<!-- Conversion panels: Row 1 ----------------------------------------------------- -->
+<div class="row">
+<div class="column" style="background-color:#aaa;">
+<h3>Temperature Conversion</h3>
+    
+<input id="inputFah" type="number" placeholder="Enter in degrees F" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Fahrenheit</label>
+
+<br>
+
+<input id="inputCel" type="number" placeholder="Enter in degrees C" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Celsius</label>
+
+<br>
+
+<input id="inputKel" type="number" placeholder="Enter in degrees K" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Kelvin</label>
+
+<br>
+
+<input id="inputRan" type="number" placeholder="Enter in degrees R" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+<label>&nbsp;&deg;Rankine</label>
+
+<br>
+
+</div>
+
+
+
+
+
+<div class="column" style="background-color:#bbb;">
+    <h3>Speed Conversion</h3>
+    
+<input id="inputMph" type="number" placeholder="Enter in miles per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+<label>&nbsp;MPH</label>
+
+<br>
+
+<input id="inputKts" type="number" placeholder="Enter in knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+<label>&nbsp;Knots</label>
+
+<br>
+
+<input id="inputMps" type="number" placeholder="Enter in meters per second" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+<label>&nbsp;M/S</label>
+
+<br>
+
+<input id="inputKph" type="number" placeholder="Enter in kilometers per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+<label>&nbsp;KPH</label>
+
+<br>
+
+</div>
+
+
+
+
+
+<div class="column" style="background-color:#aaa;">
+    <h3>Pressure Conversion</h3>
+    
+<input id="inputAtm" type="number" placeholder="Enter in atmospheres" oninput="presConverter(this.id,this.value)" onchange="presConverter(this.id,this.value)">
+<label>&nbsp;Atmospheres</label>
+
+<br>
+
+<input id="inputmbs" type="number" placeholder="Enter in millibars" oninput="presConverter(this.id,this.value)" onchange="presConverter(this.id,this.value)">
+<label>&nbsp;Millibars</label>
+
+<br>
+
+<input id="inputiHg" type="number" placeholder="Enter in inches of mercury" oninput="presConverter(this.id,this.value)" onchange="presConverter(this.id,this.value)">
+<label>&nbsp;inHg</label>
+
+<br>
+
+<input id="inputPSI" type="number" placeholder="Enter in pounds of pressure per square inch" oninput="presConverter(this.id,this.value)" onchange="presConverter(this.id,this.value)">
+<label>&nbsp;PSI</label>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- Conversion panels: Row 2 ----------------------------------------------------- -->
+<div class="row">
+<div class="column" style="background-color:#bbb;">
+    <h3>Length Conversion</h3>
+
+<input id="inputIn" type="number" placeholder="Enter in inches" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Inches</label>
+
+<br>
+
+<input id="inputFt" type="number" placeholder="Enter in feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Feet</label>
+
+<br>
+
+<input id="inputYd" type="number" placeholder="Enter in yards" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Yards</label>
+
+<br>
+
+<input id="inputFm" type="number" placeholder="Enter in fathoms" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Fathoms</label>
+
+<br>
+
+<input id="inputMe" type="number" placeholder="Enter in meters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Meters</label>
+
+<br>
+
+<input id="inputCm" type="number" placeholder="Enter in centimeters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Centimeters</label>
+
+<br>
+
+<input id="inputMm" type="number" placeholder="Enter in millimeters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Millimeters</label>
+
+<br>
+
+<input id="inputMi" type="number" placeholder="Enter in miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Miles</label>
+
+<br>
+
+<input id="inputNm" type="number" placeholder="Enter in nautical miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Nautical miles</label>
+
+<br>
+
+<input id="inputKm" type="number" placeholder="Enter in kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Kilometers</label>
+
+<br>
+
+<input id="inputRD" type="number" placeholder="Enter in trips from Raleigh to Durham" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Trips from RAH to DUR</label>
+
+<br>
+
+<input id="inputER" type="number" placeholder="Enter in Earth radii" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Earth radii</label>
+
+<br>
+
+<input id="inputAU" type="number" placeholder="Enter in astronomical units" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+<label>&nbsp;Astronomical Units</label>
+
+</div>
+
+
+
+
+<div class="column" style="background-color:#aaa;">
+    <h3>Area Conversion</h3>
+
+<input id="inputAcs" type="number" placeholder="Enter in acres" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Acres</label>
+
+<br>
+
+<input id="inputHcs" type="number" placeholder="Enter in hectacres" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Hectacres</label>
+
+<br>
+
+<input id="inputSqf" type="number" placeholder="Enter in square feet" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Square feet</label>
+
+<br>
+
+<input id="inputSqi" type="number" placeholder="Enter in square miles" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Square miles</label>
+
+<br>
+
+<input id="inputSqk" type="number" placeholder="Enter in square kilometers" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Square kilometers</label>
+
+<br>
+
+<input id="inputSqm" type="number" placeholder="Enter in square meters" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Square meters</label>
+
+<br>
+
+<input id="inputFtb" type="number" placeholder="Enter # of American football fields" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;American football fields</label>
+
+<br>
+
+<input id="inputNCs" type="number" placeholder="Enter # of NCs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;North Carolinas</label>
+
+<br>
+
+<input id="inputWak" type="number" placeholder="Enter # of Wake Counties" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Wake Counties (NC)</label>
+
+<br>
+
+<input id="inputRAH" type="number" placeholder="Enter # of NWSRAH CWFAs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;NWSRAH CWFAs</label>
+
+<br>
+
+<input id="inputUSA" type="number" placeholder="Enter # of USAs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;USAs</label>
+
+<br>
+
+<input id="inputAtl" type="number" placeholder="Enter # of Atlantic Oceans" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Atlantic Oceans</label>
+
+<br>
+
+<input id="inputSAE" type="number" placeholder="Enter # of Earth's surfaces" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+<label>&nbsp;Earth surfaces</label>
+
+</div>
+
+
+
+
+
+<div class="column" style="background-color:#bbb;">
+<h3>Time Conversion</h3>
+
+<input id="inputSec" type="number" placeholder="Enter in seconds" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Seconds</label>
+
+<br>
+
+<input id="inputMin" type="number" placeholder="Enter in minutes" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Minutes</label>
+
+<br>
+
+<input id="inputHrs" type="number" placeholder="Enter in hours" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Hours</label>
+
+<br>
+
+<input id="inputDay" type="number" placeholder="Enter in days" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Days</label>
+
+<br>
+
+<input id="inputWks" type="number" placeholder="Enter in weeks" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Week</label>
+
+<br>
+
+<input id="inputMon" type="number" placeholder="Enter in months" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Months</label>
+
+<br>
+
+<input id="inputYrs" type="number" placeholder="Enter in years" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Years</label>
+
+<br>
+
+<input id="inputDcs" type="number" placeholder="Enter in decades" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Decades</label>
+
+<br>
+
+<input id="inputCen" type="number" placeholder="Enter in centuries" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Centuries</label>
+
+<br>
+
+<input id="inputMil" type="number" placeholder="Enter in millennia" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Millennia</label>
+
+<br>
+
+<input id="inputMar" type="number" placeholder="Enter in Martian years" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Martian years</label>
+
+<br>
+
+<input id="inputJup" type="number" placeholder="Enter in Jovian years" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Jovian years</label>
+
+<br>
+
+<input id="inputGal" type="number" placeholder="Enter in galactic-years" oninput="timeConverter(this.id,this.value)" onchange="timeConverter(this.id,this.value)">
+<label>&nbsp;Galactic-years</label>
+
+</div>
+</div>
+
+
+</body>
+</html>
+
